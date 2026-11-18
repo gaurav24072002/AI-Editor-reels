@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 Second Edit</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%9C%82%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/filmcraft.css">
+</head>
+<body>
+<header class="top">
+  <div class="logo">11<span>Second</span>Edit</div>
+  <div class="tag">one-click AI reel editor · powered by Claude Code</div>
+</header>
+
+<main>
+  <!-- ============ SETUP ============ -->
+  <section id="setup" class="card-stack">
+
+    <!-- STEP 1 -->
+    <section class="card">
+      <div class="card-head"><span class="stepnum">1</span><h2>Select your video(s) to edit</h2></div>
+      <p class="hint">Your raw footage — talking heads, b-roll, whatever you shot. Files stay local and are never modified.</p>
+      <label class="drop" id="baseDrop">
+        <input type="file" id="baseFile" accept="video/*">
+        <div class="drop-in">
+          <div class="drop-ico">🎬</div>
+          <div><strong>Drop your video here, or click to browse</strong><br><small>mp4 / mov / webm — stored locally, never uploaded to a cloud</small></div>
+        </div>
+      </label>
+      <div class="picked hidden" id="basePicked">✔ <span id="baseName"></span> <button class="mini" id="baseClear">remove</button></div>
+      <div class="row" style="margin-top:10px">
+        <button class="ghost" id="addVideoBtn">＋ Add video</button>
+      </div>
+      <ul class="broll-list" id="vidList"></ul>
+      <details class="adv">
+        <summary>…or paste a local file path</summary>
+        <div class="row">
+          <input type="text" id="basePath" placeholder="/home/you/videos/raw-take.mp4">
+          <button class="ghost" id="baseUsePath">Use path</button>
+        </div>
+      </details>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="card">
+      <div class="card-head"><span class="stepnum">2</span><h2>Choose the edits you want</h2></div>
+      <p class="hint">Toggle each edit on or off. Click the <strong>⚙</strong> to fine-tune an edit.</p>
+      <div class="opt-rows" id="optRows"></div>
+
+      <div class="row aspect-row">
+        <span class="lbl">Output video format</span>
+        <label class="pill"><input type="radio" name="format" value="short" checked><span>Short form · 9:16</span></label>
+        <label class="pill"><input type="radio" name="format" value="long"><span>Long form · 16:9</span></label>
+      </div>
+
+      <div class="row aspect-row">
+        <span class="lbl">Open edit in</span>
+        <label class="pill"><input type="radio" name="openIn" value="studio" checked><span>11 Second Edit Studio</span></label>
+        <label class="pill"><input type="radio" name="openIn" value="davinci"><span>DaVinci Resolve <small>(XML export)</small></span></label>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="card">
+      <div class="card-head"><span class="stepnum">3</span><h2>Edit in one click</h2></div>
+      <p class="hint" id="warnLine"></p>
+      <div class="row cta-row">
+        <div class="preset-ctl">
+          <input type="text" id="presetName" placeholder="preset name" class="preset-name">
+          <button class="ghost" id="presetSave">💾 Save preset</button>
+          <button class="ghost hidden" id="presetLoad">↺ Load preset</button>
+          <button class="mini hidden" id="presetClear">clear</button>
+        </div>
+        <button class="big" id="editBtn" disabled>✂️ Edit Video</button>
+      </div>
+      <p class="hint" style="margin:12px 0 0">Edit runs in the background via Claude Code — typically 10–50 min depending on length. The terminal shows live progress.</p>
+    </section>
+  </section>
+
+  <!-- ============ PROGRESS ============ -->
+  <section id="progress" class="hidden">
+    <div class="card">
+      <div class="card-head"><h2 id="progTitle">Editing…</h2><span class="chip" id="progChip">working</span></div>
+      <p class="hint" id="progHint">Claude Code is editing in the terminal. Each step checks off as it finishes.</p>
+      <ol class="checklist" id="checklist"></ol>
+      <div class="row cta-row hidden" id="doneRow">
+        <a class="big" id="openEditorBtn" href="#">🎬 Open editor</a>
+        <button class="big" id="fcOpenBtn" type="button">🎥 Edit from AI Editor</button>
+        <a class="big ghost" id="downloadBtn" href="#">⬇ Export MP4</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDITOR ============ -->
+  <section id="editor" class="hidden">
+    <div class="card editor-grid">
+      <div class="ed-left">
+        <iframe id="prev" title="preview"></iframe>
+      </div>
+      <div class="ed-right">
+        <div class="ask-agent" id="askAgent">
+          <div class="tr-head"><span>🎯 Section editor</span><span class="hint2">drag on the timeline (or mark in/out) to select, then tell it what to change</span></div>
+          <div class="row">
+            <span class="lbl" id="selRange">no selection</span>
+            <button class="ghost" id="markIn">⌖ In</button>
+            <button class="ghost" id="markOut">⌖ Out</button>
+            <button class="ghost" id="clearSel">✕</button>
+          </div>
+          <input type="text" id="noteText" placeholder="e.g. “add motion graphics”, “b-roll over my head”, “green screen blue”, “zoom in here”, “cut this”, “hook: Stop doing this”">
+          <div class="row">
+            <button class="big ghost" id="applyNotes" disabled>⚡ Apply AI edit</button>
+            <span class="hint2" id="notesStatus"></span>
+          </div>
+          <ul class="note-list" id="noteList"></ul>
+        </div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <span>Timeline</span>
+            <span class="tl-meta" id="tlMeta"></span>
+          </div>
+          <div class="tl" id="tl"></div>
+        </div>
+        <div class="tr-card">
+          <div class="tr-head">
+            <span>Transcript</span>
+            <span class="hint2">click a word to cut it · click again to restore</span>
+          </div>
+          <div class="tr" id="tr"></div>
+        </div>
+        <div class="row cta-row">
+          <div>
+            <a class="big" id="exportBtn2" href="#">⬇ Export MP4</a>
+            <a class="ghost" id="reRenderBtn" href="#">↻ Re-render with current cuts</a>
+            <button class="big ghost" id="fcFromStudio" type="button" style="margin-top:8px">🎥 Open in FilmCraft editor</button>
+          </div>
+          <a class="ghost hidden" id="xmlBtn" href="#">⬇ Export XML (DaVinci / Premiere / Final Cut)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILMCRRAFT EDITOR (Premiere-style NLE) ============ -->
+  <section id="fcEditor" class="hidden" style="margin-top:18px">
+    <div class="fc">
+      <!-- menu bar -->
+      <div class="fc-menu">
+        <span class="fc-logo"><b>Film</b>Craft</span>
+        <span class="mi" data-m="file">File</span>
+        <span class="mi" data-m="edit">Edit</span>
+        <span class="mi" data-m="seq">Sequence</span>
+        <span class="mi" data-m="clip">Clip</span>
+        <span class="mi" data-m="fx">Effects</span>
+        <span class="fc-ver">0.20.1 · 11 Second Edit</span>
+      </div>
+
+      <!-- toolbar -->
+      <div class="fc-tools">
+        <button class="fc-btn" id="fcUndo" title="Undo (Ctrl+Z)">↩</button>
+        <button class="fc-btn" id="fcRedo" title="Redo (Ctrl+Shift+Z)">↪</button>
+        <span class="sep"></span>
+        <button class="fc-btn" id="fcSplit" title="Split at playhead (S)">✂ Split</button>
+        <button class="fc-btn" id="fcRippleDel" title="Ripple-delete selected (Del)">⌦ Del</button>
+        <span class="sep"></span>
+        <button class="fc-btn on" id="fcSnap" title="Snap to clip edges & playhead">🧲</button>
+        <button class="fc-btn" id="fcAddV" title="Add video track">＋V</button>
+        <button class="fc-btn" id="fcAddA" title="Add audio track">＋A</button>
+        <span class="sep"></span>
+        <span class="fc-seqsel">Seq <select id="fcSeqSel"></select> <button class="fc-btn" id="fcNewSeq" title="New sequence">＋</button></span>
+        <span class="sep"></span>
+        <button class="fc-btn" id="fcZoomOut" title="Zoom out (−)">−</button>
+        <button class="fc-btn" id="fcZoomIn" title="Zoom in (+)">＋</button>
+        <button class="fc-btn" id="fcZoomFit" title="Fit to window">Fit</button>
+        <span class="sep"></span>
+        <button class="fc-btn" id="fcRebuild" title="Rebuild the project from the 11 Second Edit cuts">↻ Rebuild</button>
+        <button class="fc-btn primary" id="fcRender" title="Render an MP4 of the current edit">⬇ Render</button>
+        <span class="fc-chip" id="fcChip">idle</span>
+      </div>
+
+      <!-- project / bins -->
+      <div class="fc-bins">
+        <h4>Project · <span id="fcProjName">11 Second Edit</span></h4>
+        <div class="fc-binlist" id="fcBinList"><div class="fc-empty">loading…</div></div>
+        <div class="fc-bin-tools">
+          <button class="fc-btn" id="fcImportBtn">＋ Import media</button>
+          <input type="file" id="fcImportFile" hidden multiple accept="video/*,audio/*,image/*">
+        </div>
+        <details class="fc-pathimp">
+          <summary>add a local file path</summary>
+          <div class="fc-row2">
+            <input type="text" id="fcImportPath" placeholder="/home/you/extra-clip.mp4">
+            <button class="fc-btn" id="fcImportPathGo">Add</button>
+          </div>
+        </details>
+        <div class="fc-hint">double-click media to place it at the playhead · drag it onto a track to drop at an exact time</div>
+      </div>
+
+      <!-- center: program monitor + timeline -->
+      <div class="fc-center">
+        <div class="fc-monitor">
+          <div class="fc-screen">
+            <video id="fcVid" playsinline style="display:none"></video>
+            <img id="fcFrame" alt="" style="display:none;max-width:100%;max-height:100%;border-radius:6px;background:#000;box-shadow:0 8px 30px rgba(0,0,0,.5)">
+            <div class="fc-noimg" id="fcOverlay">building…</div>
+          </div>
+          <div class="fc-transport">
+            <button class="fc-tp" id="fcToStart" title="to start">⏮</button>
+            <button class="fc-tp" id="fcStepB" title="step −1s">−1s</button>
+            <button class="fc-tp" id="fcPlay" title="play / pause (Space)">▶</button>
+            <button class="fc-tp" id="fcStepF" title="step +1s">+1s</button>
+            <input type="range" class="fc-scrub" id="fcScrub" min="0" max="1000" step="1" value="0">
+            <span class="fc-tc"><span id="fcTcNow">0:00.0s</span> / <span id="fcTcEnd">0:00.0s</span></span>
+          </div>
+        </div>
+
+        <div class="fc-tl">
+          <div class="fc-tl-head">
+            <span class="t">Timeline · <b id="fcTlName" class="tl-name">—</b></span>
+            <span class="hint" id="fcTlHint">no build yet</span>
+            <span class="hint tl-hint2">click clip = select · drag edge = trim · S = split · drag body = move</span>
+          </div>
+          <div class="fc-tl-body">
+            <div class="fc-tl-heads" id="fcTlHeads"></div>
+            <div class="fc-tl-scroll" id="fcTlScroll">
+              <div class="fc-tl-grid" id="fcTlGrid"><div class="fc-ruler" id="fcRuler"></div></div>
+              <div class="fc-playhead" id="fcPlayhead"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- inspector: AI + effect + color + audio + text -->
+      <div class="fc-insp">
+        <div class="fc-tabs">
+          <button data-pane="ai" class="on">✨ AI</button>
+          <button data-pane="fx">Effect</button>
+          <button data-pane="color">Color</button>
+          <button data-pane="audio">Audio</button>
+          <button data-pane="text">Text</button>
+        </div>
+
+        <div class="fc-pane on" id="fcPaneAi">
+          <div class="fc-ai-scope" id="fcAiSel">click a clip on the timeline to scope the AI edit to it</div>
+          <textarea id="fcAiText" placeholder="Tell the AI what to edit — e.g. “zoom in on my face”, “quieter”, “add label: Follow”, “warmer”, “black & white”, “cut this clip”, or “add a whoosh on every cut”"></textarea>
+          <div class="fc-chips" id="fcAiChips"></div>
+          <button class="fc-btn primary fc-ai-apply" id="fcAiApply">⚡ Apply AI edit</button>
+          <div class="fc-ai-res" id="fcAiRes"></div>
+          <div class="fc-ai-note" id="fcAiNote"></div>
+        </div>
+
+        <div class="fc-pane" id="fcPaneFx"><div class="fc-empty">Select a clip to edit its motion, opacity & effects.</div></div>
+        <div class="fc-pane" id="fcPaneColor"><div class="fc-empty">Select a clip to grade it (Lumetri).</div></div>
+        <div class="fc-pane" id="fcPaneAudio"><div class="fc-empty">Select a clip to adjust its audio.</div></div>
+        <div class="fc-pane" id="fcPaneText"><div class="fc-empty">Select a clip to add or edit a text overlay.</div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- modal -->
+<div class="modal-back hidden" id="modalBack">
+  <div class="modal" id="modal"></div>
+</div>
+
+<footer class="foot">local only · originals untouched · keys stay in your env</footer>
+<script src="/planlib.js"></script>
+<script src="/app.js"></script>
+<script src="/filmcraft.js"></script>
+</body>
+</html>

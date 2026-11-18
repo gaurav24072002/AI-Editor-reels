@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11 Second Edit — Composition</title>
+<link rel="stylesheet" href="/style.css">
+<style>
+  body.comp { background:#0a0a0f; }
+  .comp-wrap { display:flex; flex-direction:column; align-items:center; gap:12px; padding:16px; }
+  #stage { position:relative; border-radius:12px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.6); }
+  canvas { display:block; }
+  .comp-bar { display:flex; align-items:center; gap:12px; width:100%; max-width:900px; }
+  .comp-bar button {
+    background:#ffd60a; border:none; color:#111; font-weight:800; font-size:15px;
+    width:44px; height:44px; border-radius:50%; cursor:pointer; flex:0 0 auto;
+  }
+  .comp-bar button:hover { filter:brightness(1.1); }
+  .seekwrap { flex:1; position:relative; height:8px; background:#26262e; border-radius:4px; cursor:pointer; }
+  .seekfill { position:absolute; left:0; top:0; bottom:0; background:#ffd60a; border-radius:4px; width:0%; }
+  .tcode { font:600 13px ui-monospace,monospace; color:#9ca3af; min-width:110px; text-align:right; }
+  .comp-status { color:#6b7280; font:500 13px system-ui,sans-serif; }
+  .hidden { display:none !important; }
+  video { display:none; }
+</style>
+</head>
+<body class="comp">
+<div class="comp-wrap">
+  <div id="stage"><canvas id="cv"></canvas></div>
+  <div class="comp-bar" id="compBar">
+    <button id="playBtn" title="Play / Pause (space)">▶</button>
+    <div class="seekwrap" id="seekwrap"><div class="seekfill" id="seekfill"></div></div>
+    <div class="tcode" id="tcode">0:00.0 / 0:00.0</div>
+  </div>
+  <div class="comp-status" id="compStatus">Loading…</div>
+  <div id="media"></div>
+</div>
+<script src="/planlib.js"></script>
+<script>
+(() => {
+  const P = new URLSearchParams(location.search);
+  const job = P.get("job");
+  const renderMode = P.get("render") === "1";
+  const P_ = window.PlanLib;
+  const status = document.getElementById("compStatus");
+  const media = document.getElementById("media");
+  const cv = document.getElementById("cv");
+  const ctx = cv.getContext("2d");
+
+  let plan = null, transcript = null, state = null;
+  let assets = { base: null, broll: {} };
+  let t = 0, playing = false, lastRaf = 0;
+  let mixAudio = null; // the FINAL mix (voice+music+sfx) for preview playback
+
+  function setupPreviewAudio() {
+    if (renderMode || mixAudio) return;
+    const a = document.createElement("audio");
+    a.preload = "auto";
+    a.volume = 1.0;
+    media.appendChild(a);
+    // Best: mix.m4a — audio-only copy of the export mix (small, fast to load,
+    // on the final cut timeline so it stays in sync with the playhead).
+    // Fallback: out.mp4's audio track, then the raw enhanced voice track
+    // (full length — desynced if there are cuts, but better than silence).
+    const sources = [`/api/jobs/${job}/media/mix.m4a`, `/api/jobs/${job}/media/out.mp4`];
+    if (plan && plan.audio && plan.audio.enhanced) sources.push(plan.audio.enhanced);
+    let si = 0;
+    a.addEventListener("error", () => { if (si < sources.length - 1) { si++; a.src = sources[si]; } });
+    a.src = sources[0];
+    mixAudio = a;
+  }
+  function syncAudio() {
+    if (!mixAudio || !state) return;
+    try {
+      if (playing) {
+        const want = Math.max(0, Math.min(t, (mixAudio.duration || 1e9) - 0.05));
+        if (Math.abs(mixAudio.currentTime - want) > 0.22) mixAudio.currentTime = want;
+        if (mixAudio.paused) mixAudio.play().catch(() => {});
+      } else if (!mixAudio.paused) mixAudio.pause();
+    } catch (e) { /* audio can be blocked until first user gesture */ }
+  }
+
+  function fmt(x) {
+    const m = Math.floor(x / 60), s = x - m * 60;
+    return m + ":" + (s < 10 ? "0" : "") + s.toFixed(1);
+  }
+
+  async function loadJson(url) {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(url + " -> " + r.status);
+    return r.json();
+  }
+
+  function makeVideo(file, cls) {
+    const v = document.createElement("video");
+    v.src = file;
+    v.muted = true;
+    v.playsInline = true;
+    v.preload = "auto";
+    v.crossOrigin = "anonymous";
+    if (cls) v.className = cls;
+    media.appendChild(v);
+    return v;
+  }
+
+  async function boot() {
+    try {
+      const [p, tr] = await Promise.all([
+        loadJson(`/api/jobs/${job}/plan`),
+        loadJson(`/api/jobs/${job}/transcript`),
+      ]);
+      plan = p; transcript = tr;
+      rebuild();
+    } catch (e) {
+      status.textContent = "Not ready yet — the edit is still being built. (" + e.message + ")";
+      setTimeout(boot, 2500); // retry until the pipeline writes the plan
+      return;
+    }
+    if (renderMode) {
+      document.getElementById("compBar").classList.add("hidden");
+      document.getElementById("compStatus").classList.add("hidden");
+      await prebufferAll();       // pull a decoded frame into every clip first
+      window.__renderReady = true; // only then signal the renderer to capture
+    } else {
+      setupPreviewAudio();
+    }
+  }
+
+  function rebuild() {
+    // drop old media
+    media.innerHTML = "";
+    assets = { base: null, broll: {} };
+    state = P_.deriveAll(transcript.words, plan);
+    state.plan = plan;
+    state.words = transcript.words;
+    state.duration = P_.totalDuration(state.segments);
+    if (!state.duration) state.duration = transcript.duration || 0;
+
+    cv.width = state.W; cv.height = state.H;
+
+    // scale to viewport
+    const fit = () => {
+      const maxW = Math.min(window.innerWidth - 48, renderMode ? state.W : 720);
+      const scale = Math.min(maxW / state.W, (window.innerHeight - 160) / state.H, 1);
+      cv.style.width = (state.W * scale) + "px";
+      cv.style.height = (state.H * scale) + "px";
+    };
+    fit();
+    window.addEventListener("resize", fit);
+
+    // media elements: one <video> per segment (same base file) + b-roll clips
+    const segVideos = state.segments.map(() => makeVideo(plan.baseFile || "media/base.mp4"));
+    if (plan.broll) for (const b of plan.broll) {
+      if (!assets.broll[b.file]) assets.broll[b.file] = makeVideo(b.file);
+    }
+    // for drawing we need the "current" frame from the active segment's video
+    assets.base = { get video() { return null; } }; // placeholder, replaced per-frame
+    assets.segVideos = segVideos;
+
+    t = 0;
+    drawFrame();
+    status.textContent = `Ready — ${state.segments.length} segments, ${fmt(state.duration)} total`;
+  }
+
+  // Wait until <video v> is positioned at ~`want` AND has a decoded frame
+  // (readyState>=2 = HAVE_CURRENT_DATA). Drawing before that paints black.
+  async function videoAtFrame(v, want) {
+    want = Math.max(0, Math.min(want, (v.duration || 1e9) - 0.03));
+    if (Math.abs(v.currentTime - want) > 0.03) {
+      const seeked = new Promise(res => {
+        const h = () => { v.removeEventListener("seeked", h); res(); };
+        v.addEventListener("seeked", h);
+      });
+      v.currentTime = want;
+      await seeked.catch(() => {});
+    }
+    const t0 = Date.now();
+    while (v.readyState < 2 && Date.now() - t0 < 4000) await new Promise(r => setTimeout(r, 25));
+    if (v.readyState < 2) { // nudge the pipeline if it's stuck
+      try { await v.play(); await new Promise(r => setTimeout(r, 150)); v.pause(); } catch (e) {}
+    }
+    return v.readyState >= 2;
+  }
+
+  // Render mode: pull a decoded frame into every segment/broll video up front,
+  // so per-frame seeks during the capture loop are instant and never black.
+  async function prebufferAll() {
+    const jobs = state.segments.map((s, i) => videoAtFrame(assets.segVideos[i], (s.srcStart + s.srcEnd) / 2));
+    if (plan.broll) for (const b of plan.broll) { const bv = assets.broll[b.file]; if (bv) jobs.push(videoAtFrame(bv, Math.min(0.5, (bv.duration || 1) / 2))); }
+    await Promise.all(jobs.map(p => p.catch(() => {})));
+  }
+
+  function activeSegVideo() {
+    const seg = P_.segmentAt(state.segments, t);
+    if (!seg) return null;
+    const idx = state.segments.indexOf(seg);
+    return assets.segVideos[idx];
+  }
+
+  function ensureSegment(idx) {
+    const v = assets.segVideos[idx];
+    for (let i = 0; i < assets.segVideos.length; i++) {
+      if (i !== idx) { const o = assets.segVideos[i]; if (!o.paused) o.pause(); }
+    }
+    return v;
+  }
+
+  async function drawFrame(at) {
+    if (at != null) t = Math.max(0, Math.min(at, state.duration - 0.001));
+    const L = P_.layoutAt(t, state);
+    // pick the video element that has the frame for this moment
+    const seg = P_.segmentAt(state.segments, t);
+    let v = null;
+    if (seg) {
+      const idx = state.segments.indexOf(seg);
+      v = assets.segVideos[idx];
+      if (!v.paused) v.pause();
+      const want = seg.srcStart + (t - seg.tlStart);
+      await videoAtFrame(v, want);
+    }
+    const L2 = Object.assign({}, L, { base: L.base });
+    // drawFrame expects assets.base = the video element with current frame
+    const save = assets.base;
+    if (v) assets.base = v;
+    // broll videos also need their frame
+    if (L2.broll) {
+      const bv = assets.broll[L2.broll.file];
+      if (bv) {
+        const prog = (t - L2.broll.tlStart) / L2.broll.dur;
+        const want = Math.max(0, Math.min(bv.duration || 1e9, prog * (bv.duration || 0)));
+        await videoAtFrame(bv, want);
+      }
+    }
+    P_.drawFrame(ctx, L2, assets, state.plan);
+    if (save) assets.base = save;
+    syncAudio();
+    updateBar();
+  }
+
+  function updateBar() {
+    const bar = document.getElementById("seekfill");
+    const tc = document.getElementById("tcode");
+    if (bar) bar.style.width = (state.duration ? (t / state.duration * 100) : 0) + "%";
+    if (tc) tc.textContent = fmt(t) + " / " + fmt(state.duration);
+    // exposed for the parent editor page (timeline playhead, note timestamps)
+    window.__t = t;
+    window.__dur = state ? state.duration : 0;
+  }
+
+  function tick(now) {
+    if (!playing) return;
+    const dt = Math.min(0.1, (now - lastRaf) / 1000);
+    lastRaf = now;
+    t += dt;
+    if (t >= state.duration) { t = 0; } // loop preview
+    const seg = P_.segmentAt(state.segments, t);
+    if (seg) {
+      const idx = state.segments.indexOf(seg);
+      const v = ensureSegment(idx);
+      const want = seg.srcStart + (t - seg.tlStart);
+      if (v.paused) v.play().catch(() => {});
+      if (Math.abs(v.currentTime - want) > 0.25) v.currentTime = want; // drift correction
+    }
+    drawFrame().catch(() => {});
+    requestAnimationFrame(tick);
+  }
+
+  function setPlaying(p) {
+    playing = p;
+    document.getElementById("playBtn").textContent = p ? "⏸" : "▶";
+    syncAudio();
+    if (p) { lastRaf = performance.now(); requestAnimationFrame(tick); }
+    else { for (const v of assets.segVideos || []) v.pause(); }
+  }
+
+  document.getElementById("playBtn").addEventListener("click", () => setPlaying(!playing));
+  document.getElementById("seekwrap").addEventListener("click", (e) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    t = (e.clientX - r.left) / r.width * state.duration;
+    drawFrame(true).then(() => { if (playing) setPlaying(true); });
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.code === "Space") { e.preventDefault(); setPlaying(!playing); }
+  });
+
+  // ---- render API (used by scripts/render.mjs) ----
+  if (renderMode) {
+    window.RenderAPI = {
+      ready: () => new Promise(res => {
+        const ok = () => window.__renderReady && assets.segVideos;
+        const iv = setInterval(() => { if (ok()) { clearInterval(iv); res(true); } }, 100);
+      }),
+      size: () => ({ w: cv.width, h: cv.height }),
+      duration: () => state ? state.duration : 0,
+      async seek(ts) { await drawFrame(ts); },
+      async frameBuffer() {
+        return cv.toDataURL("image/png");
+      },
+    };
+  }
+
+  boot();
+})();
+</script>
+</body>
+</html>

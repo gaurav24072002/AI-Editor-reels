@@ -1,0 +1,11 @@
+{
+  "cutRanges": [[0, 15]],
+  "extraCutWords": [73, 74],
+  "excludeSilence": [60, 64, 65],
+  "hook": { "text": "It cuts your talking-head videos in one click" },
+  "cta": { "text": "Try it today and tell me." },
+  "zoomAtWords": [45, 53, 84],
+  "musicPrompt": "upbeat lofi motivational beat, clean modern, subtle bass, light drums",
+  "musicSeconds": 45,
+  "sfx": "auto"
+}

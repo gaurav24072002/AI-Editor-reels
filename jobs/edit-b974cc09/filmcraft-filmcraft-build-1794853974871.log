@@ -1,0 +1,12 @@
+[report] edit-b974cc09 filmcraft-build running building FilmCraft project…
+[fc-build] sequence 1080x1920@30 (V1 V2 A1 A2)
+[fc-build] imported base.mp4 (item 6)
+[fc-build] 1 clip(s) on V1, audio on A1
+[fc-build] cta “Follow for more”
+[fc-build] captions on clips
+[fc-build] 1 sfx on A2
+[fc-build] applied 19 effect cmds
+[fc-build] project saved
+[fc-build] verification frame @ 1.0s ok
+[report] edit-b974cc09 filmcraft-build done sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok
+{"ok":true,"clips":1,"duration":13.26}

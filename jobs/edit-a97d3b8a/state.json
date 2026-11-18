@@ -1,0 +1,221 @@
+{
+  "id": "edit-a97d3b8a",
+  "createdAt": "2026-11-15T11:10:20.068Z",
+  "status": "done",
+  "videoPath": "/home/gaurav/AI-Editor/jobs/inbox/1794740974258-0991cff1-base.mp4",
+  "brollFiles": [],
+  "features": {
+    "enhanceAudio": true,
+    "removeBadTakes": true,
+    "removeFillers": true,
+    "removeSilences": true,
+    "broll": true,
+    "zooms": true,
+    "color": true,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "music": true,
+    "sfx": true
+  },
+  "settings": {
+    "brand": {
+      "template": "hormozi",
+      "name": "Hormozi listicle",
+      "style": {
+        "captions": {
+          "color": "#ffffff",
+          "size": 64,
+          "minWords": 3,
+          "outline": true
+        },
+        "hookColor": "#ffffff",
+        "zoomCount": 3,
+        "zoomStrength": "Medium",
+        "sfx": "light",
+        "pacing": "medium",
+        "broll": "medium",
+        "music": "subtle corporate-motivational bed, low volume"
+      },
+      "structure": "Open with the claim ('If I had to start over…'). Then 3-5 numbered points; each point gets one b-roll or zoom. End with the CTA repeated verbatim."
+    },
+    "fillers": {
+      "customList": ""
+    },
+    "silences": {
+      "minGap": 0.45
+    },
+    "captions": {
+      "custom": true,
+      "font": "Impact (default)",
+      "size": 64,
+      "color": "#ffffff",
+      "outline": true,
+      "minWords": 3
+    },
+    "broll": {
+      "aiPrompt": "",
+      "clips": []
+    },
+    "emotion": {
+      "desc": ""
+    },
+    "instructions": "",
+    "zooms": {
+      "strength": "Medium"
+    },
+    "music": {
+      "style": "subtle corporate-motivational bed, low volume"
+    },
+    "color": {
+      "brightness": true,
+      "lift": true,
+      "whiteBalance": true
+    },
+    "hook": {
+      "audience": ""
+    },
+    "textHook": {
+      "mode": "AI writes it from the transcript",
+      "text": "",
+      "color": "#ffffff"
+    },
+    "cta": {
+      "text": ""
+    },
+    "transcribe": {
+      "language": "Auto-detect (multilingual)",
+      "vocab": "",
+      "censor": false
+    },
+    "targetLength": {
+      "mode": "Auto (editor decides)",
+      "seconds": 30
+    }
+  },
+  "aspect": "9:16",
+  "outName": "reel_before-11s",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "71 words · 26.4s · hi",
+      "at": "2026-11-15T11:22:35.326Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "no bad takes; 1 veto (kept 'growing'); hook + CTA written",
+      "at": "2026-11-15T11:23:51.149Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "1 silent words removed (1 gaps)",
+      "at": "2026-11-15T11:22:41.847Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "1 filler words removed",
+      "at": "2026-11-15T11:22:41.923Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "done",
+      "detail": "no bad takes/false starts; filler 'Oh' cut",
+      "at": "2026-11-15T11:23:51.312Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-15T11:23:53.563Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "done",
+      "detail": "brightness 1.06 · contrast 1.08 · sat 1.10",
+      "at": "2026-11-15T11:24:06.028Z"
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "done",
+      "detail": "3 punch-ins (medium): 'love?', 'savior', 'that is love'",
+      "at": "2026-11-15T11:24:06.198Z"
+    },
+    {
+      "id": "broll",
+      "label": "Place b-roll",
+      "status": "skipped",
+      "detail": "no b-roll clips uploaded",
+      "at": "2026-11-15T11:24:06.372Z"
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "done",
+      "detail": "\"Love is understanding, giving space to each other\"",
+      "at": "2026-11-15T11:24:06.534Z"
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "done",
+      "detail": "\"Follow for more on love\"",
+      "at": "2026-11-15T11:24:06.700Z"
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "done",
+      "detail": "word-by-word · Impact 64px white · min 3 words",
+      "at": "2026-11-15T11:24:06.868Z"
+    },
+    {
+      "id": "music",
+      "label": "Add background music (ElevenLabs)",
+      "status": "skipped",
+      "detail": "ELEVENLABS_API_KEY not set — edit continues without music",
+      "at": "2026-11-15T11:23:57.829Z"
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-15T11:23:58.040Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "6 segments · 21.8s · 1 words cut · hook · cta · 3 zooms · 7 sfx",
+      "at": "2026-11-15T11:24:05.859Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 21.8s · 12.7 MB",
+      "at": "2026-11-15T11:34:39.265Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "edit complete — open the editor to review or export",
+      "at": "2026-11-15T11:34:39.272Z"
+    }
+  ],
+  "updatedAt": "2026-11-15T11:34:39.272Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-a97d3b8a/out.mp4"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "11-second-edit",
+  "version": "1.0.0",
+  "description": "One-click AI video editor that runs inside Claude Code. Turns raw talking-head footage into an edited 9:16 Reel.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "server": "node server/server.js",
+    "wait-for-job": "node scripts/wait-for-job.mjs",
+    "transcribe": "node scripts/transcribe.mjs",
+    "render": "node scripts/render.mjs",
+    "test-video": "bash test/make-test-video.sh",
+    "install-render": "npm i && node scripts/setup-render-deps.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}

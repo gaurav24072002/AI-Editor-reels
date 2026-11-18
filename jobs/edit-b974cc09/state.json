@@ -1,0 +1,209 @@
+{
+  "id": "edit-b974cc09",
+  "createdAt": "2026-11-16T18:27:40.852Z",
+  "status": "done",
+  "videoPath": "/home/gaurav/AI-Editor/jobs/inbox/1794853627078-726f5fdc-base.mp4",
+  "brollFiles": [],
+  "features": {
+    "enhanceAudio": true,
+    "removeBadTakes": true,
+    "removeFillers": true,
+    "removeSilences": true,
+    "broll": true,
+    "zooms": true,
+    "color": true,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "music": false,
+    "sfx": true
+  },
+  "settings": {
+    "brand": {},
+    "fillers": {
+      "customList": ""
+    },
+    "silences": {
+      "minGap": 0.45
+    },
+    "captions": {
+      "custom": false,
+      "font": "Impact (default)",
+      "size": 64,
+      "color": "#ffffff",
+      "outline": true,
+      "minWords": 2
+    },
+    "broll": {
+      "aiPrompt": "success",
+      "clips": []
+    },
+    "emotion": {
+      "desc": ""
+    },
+    "instructions": "",
+    "zooms": {
+      "strength": "Auto (editor decides)"
+    },
+    "music": {
+      "style": ""
+    },
+    "color": {
+      "brightness": true,
+      "lift": true,
+      "whiteBalance": true
+    },
+    "hook": {
+      "audience": ""
+    },
+    "textHook": {
+      "mode": "AI writes it from the transcript",
+      "text": "",
+      "color": "#ffffff"
+    },
+    "cta": {
+      "text": ""
+    },
+    "transcribe": {
+      "language": "Auto-detect (multilingual)",
+      "vocab": "",
+      "censor": false
+    },
+    "targetLength": {
+      "mode": "Auto (editor decides)",
+      "seconds": 30
+    }
+  },
+  "aspect": "9:16",
+  "outName": "ChrisRaw-11s",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "47 words · 13.3s · en",
+      "at": "2026-11-16T18:27:44.463Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "auto-editor: 0 word-cuts, 1 zooms · no hook",
+      "at": "2026-11-16T18:27:45.842Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "0 silent words removed (0 gaps)",
+      "at": "2026-11-16T18:27:45.695Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "0 filler words removed",
+      "at": "2026-11-16T18:27:45.787Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "skipped",
+      "detail": "no bad takes/false starts detected",
+      "at": "2026-11-16T18:27:45.852Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-16T18:27:46.909Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "broll",
+      "label": "Place b-roll",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-16T18:27:47.042Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "1 segments · 13.26s · 0 words cut · cta · 1 zooms · 1 sfx",
+      "at": "2026-11-16T18:27:47.139Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 13.3s · 7.4 MB",
+      "at": "2026-11-16T18:31:00.876Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "automatic edit complete",
+      "at": "2026-11-16T18:31:00.901Z"
+    },
+    {
+      "id": "filmcraft-build",
+      "label": "filmcraft-build",
+      "status": "done",
+      "detail": "sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok",
+      "at": "2026-11-16T18:32:55.679Z"
+    },
+    {
+      "id": "filmcraft-export",
+      "label": "filmcraft-export",
+      "status": "done",
+      "detail": "FilmCraft MP4 ready",
+      "at": "2026-11-16T18:34:36.839Z"
+    }
+  ],
+  "updatedAt": "2026-11-16T18:34:36.839Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-b974cc09/out.mp4"
+}

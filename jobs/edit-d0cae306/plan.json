@@ -1,0 +1,98 @@
+{
+  "aspect": "9:16",
+  "baseFile": "/api/jobs/edit-d0cae306/media/base.mp4",
+  "audio": {
+    "volume": 1,
+    "source": "enhanced",
+    "enhanced": "/api/jobs/edit-d0cae306/media/enhanced.wav"
+  },
+  "cuts": {
+    "words": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      47,
+      48,
+      49,
+      73,
+      74,
+      75
+    ],
+    "ranges": []
+  },
+  "hook": {
+    "text": "It cuts your talking-head videos in one click",
+    "dur": 2.6,
+    "color": null
+  },
+  "cta": {
+    "text": "Try it today and tell me.",
+    "dur": 3
+  },
+  "zooms": [
+    0,
+    1,
+    2
+  ],
+  "broll": [],
+  "color": {
+    "brightness": 1.06,
+    "contrast": 1.08,
+    "saturation": 1.12
+  },
+  "captions": {
+    "enabled": true,
+    "style": "bold",
+    "font": "Impact",
+    "size": 64,
+    "color": "#ffffff",
+    "outline": true,
+    "maxWords": 4
+  },
+  "music": null,
+  "sfx": {
+    "clips": [
+      {
+        "t": 8.75,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 0,
+        "file": "/api/jobs/edit-d0cae306/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 16.940000000000005,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 1,
+        "file": "/api/jobs/edit-d0cae306/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 0.02,
+        "clip": "pop.wav",
+        "vol": 0.5,
+        "idx": 2,
+        "file": "/api/jobs/edit-d0cae306/media/sfx%2Fpop.wav"
+      },
+      {
+        "t": 17.900000000000006,
+        "clip": "ding.wav",
+        "vol": 0.4,
+        "idx": 3,
+        "file": "/api/jobs/edit-d0cae306/media/sfx%2Fding.wav"
+      }
+    ]
+  },
+  "outName": "talking-11s"
+}

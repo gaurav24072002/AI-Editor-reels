@@ -1,0 +1,242 @@
+{
+  "id": "edit-7600974e",
+  "createdAt": "2026-11-15T15:03:24.874Z",
+  "status": "failed",
+  "videoPath": "/home/gaurav/AI-Editor/jobs/inbox/1794752930186-d1daf50b-base.mp4",
+  "brollFiles": [],
+  "features": {
+    "enhanceAudio": true,
+    "removeBadTakes": true,
+    "removeFillers": true,
+    "removeSilences": true,
+    "broll": true,
+    "zooms": true,
+    "color": true,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "music": true,
+    "sfx": true
+  },
+  "settings": {
+    "brand": {
+      "template": "faceless",
+      "name": "Faceless narration",
+      "style": {
+        "captions": {
+          "color": "#ffffff",
+          "size": 68,
+          "minWords": 3,
+          "outline": true
+        },
+        "hookColor": "#ffffff",
+        "zoomCount": 3,
+        "zoomStrength": "Subtle",
+        "sfx": "light",
+        "pacing": "medium",
+        "broll": "heavy",
+        "music": "atmospheric bed"
+      },
+      "structure": "New b-roll every 2-4s, matched to the sentence. Captions centered (no talking head to avoid). Slow Ken-Burns on stills."
+    },
+    "fillers": {
+      "customList": ""
+    },
+    "silences": {
+      "minGap": 0.45
+    },
+    "captions": {
+      "custom": true,
+      "font": "Impact (default)",
+      "size": 68,
+      "color": "#ffffff",
+      "outline": true,
+      "minWords": 3
+    },
+    "broll": {
+      "aiPrompt": "",
+      "clips": []
+    },
+    "emotion": {
+      "desc": ""
+    },
+    "instructions": "",
+    "zooms": {
+      "strength": "Subtle"
+    },
+    "music": {
+      "style": "atmospheric bed"
+    },
+    "color": {
+      "brightness": true,
+      "lift": true,
+      "whiteBalance": true
+    },
+    "hook": {
+      "audience": ""
+    },
+    "textHook": {
+      "mode": "AI writes it from the transcript",
+      "text": "",
+      "color": "#ffffff"
+    },
+    "cta": {
+      "text": ""
+    },
+    "transcribe": {
+      "language": "Auto-detect (multilingual)",
+      "vocab": "",
+      "censor": false
+    },
+    "targetLength": {
+      "mode": "Auto (editor decides)",
+      "seconds": 30
+    }
+  },
+  "aspect": "9:16",
+  "outName": "reel_before-11s",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "71 words · 26.4s · hi",
+      "at": "2026-11-15T15:07:09.383Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "no bad takes; kept 'growing'; hook + CTA written (faceless)",
+      "at": "2026-11-15T15:07:58.465Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "1 silent words removed (1 gaps)",
+      "at": "2026-11-15T15:07:22.748Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "1 filler words removed",
+      "at": "2026-11-15T15:07:22.825Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "done",
+      "detail": "filler 'Oh' cut; no false starts",
+      "at": "2026-11-15T15:07:58.634Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-15T15:08:00.818Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "done",
+      "detail": "brightness 1.05 · contrast 1.07 · sat 1.08",
+      "at": "2026-11-15T15:08:08.474Z"
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "done",
+      "detail": "2 subtle punch-ins: 'savior', 'that is love'",
+      "at": "2026-11-15T15:08:08.636Z"
+    },
+    {
+      "id": "broll",
+      "label": "Place b-roll",
+      "status": "skipped",
+      "detail": "no b-roll clips uploaded",
+      "at": "2026-11-15T15:08:08.803Z"
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "done",
+      "detail": "\"Love is understanding, giving space to each other\"",
+      "at": "2026-11-15T15:08:08.969Z"
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "done",
+      "detail": "\"Follow for more on love\"",
+      "at": "2026-11-15T15:08:09.140Z"
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "done",
+      "detail": "word-by-white captions · Impact white · min 3 words",
+      "at": "2026-11-15T15:08:09.304Z"
+    },
+    {
+      "id": "music",
+      "label": "Add background music (ElevenLabs)",
+      "status": "skipped",
+      "detail": "ELEVENLABS_API_KEY not set — edit continues without music",
+      "at": "2026-11-15T15:08:01.071Z"
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-15T15:08:00.938Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "6 segments · 21.8s · 1 words cut · hook · cta · 2 zooms · 7 sfx",
+      "at": "2026-11-15T15:08:08.306Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 21.8s · 12.5 MB",
+      "at": "2026-11-15T15:17:55.585Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "edit complete — open the editor to review or export",
+      "at": "2026-11-15T15:17:55.592Z"
+    },
+    {
+      "id": "filmcraft-build",
+      "label": "filmcraft-build",
+      "status": "done",
+      "detail": "sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 6 clip(s) on V1, audio on A1 · hook “Love is understanding, giving space to each other” · cta “Follow for more on love” · captions on clips · 7 sfx on A2 · applied 87 effect cmds · project saved · verification frame @ 1.0s ok",
+      "at": "2026-11-16T08:00:04.956Z"
+    },
+    {
+      "id": "filmcraft-ai",
+      "label": "filmcraft-ai",
+      "status": "done",
+      "detail": "1 applied · 0 flagged · 0 issues",
+      "at": "2026-11-16T08:31:38.131Z"
+    },
+    {
+      "id": "filmcraft-export",
+      "label": "filmcraft-export",
+      "status": "done",
+      "detail": "FilmCraft MP4 ready",
+      "at": "2026-11-16T08:45:49.300Z"
+    }
+  ],
+  "updatedAt": "2026-11-16T08:45:49.300Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-7600974e/out.mp4"
+}

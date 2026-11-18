@@ -1,0 +1,53 @@
+{
+  "cutRanges": [],
+  "extraCutWords": [],
+  "excludeSilence": [],
+  "excludeFillers": [],
+  "hook": {
+    "text": "3 mistakes killing your growth"
+  },
+  "cta": {
+    "text": "Follow for more"
+  },
+  "zoomAtWords": [
+    0,
+    36,
+    48
+  ],
+  "broll": [],
+  "motion": [
+    {
+      "type": "burst",
+      "t": 0.25,
+      "dur": 1.1,
+      "color": "#ffd60a",
+      "x": 0.5,
+      "y": 0.32
+    },
+    {
+      "type": "pulse",
+      "t": 9.936,
+      "dur": 0.9,
+      "color": "#22d3ee",
+      "x": 0.5,
+      "y": 0.5
+    },
+    {
+      "type": "sweep",
+      "t": 18.979999999999997,
+      "dur": 0.9,
+      "color": "#ffd60a",
+      "y": 0.805
+    }
+  ],
+  "color": {
+    "brightness": 1.05,
+    "contrast": 1.08,
+    "saturation": 1.1
+  },
+  "musicPrompt": "subtle motivational bed",
+  "bgReplace": {
+    "color": "#00b140",
+    "fps": 30
+  }
+}

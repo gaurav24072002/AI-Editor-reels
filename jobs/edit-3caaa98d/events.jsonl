@@ -1,0 +1,306 @@
+{"at":"2026-11-15T16:15:50.169Z","step":"transcribe","status":"running","detail":"extracting 16k mono audio…"}
+{"at":"2026-11-15T16:15:50.426Z","step":"transcribe","status":"running","detail":"running WhisperX (first run downloads models)…"}
+{"at":"2026-11-15T16:15:55.349Z","step":"transcribe","status":"done","detail":"71 words · 26.4s · hi"}
+{"at":"2026-11-15T16:15:55.396Z","step":"silences","status":"running","detail":"detecting silences ≥ 0.45s…"}
+{"at":"2026-11-15T16:15:58.063Z","step":"silences","status":"done","detail":"1 silent words removed (1 gaps)"}
+{"at":"2026-11-15T16:15:58.108Z","step":"fillers","status":"done","detail":"1 filler words removed"}
+{"at":"2026-11-15T16:15:58.244Z","step":"analyze","status":"done","detail":"auto-editor: 0 word-cuts, 3 zooms · hook “3 mistakes killing your growth”"}
+{"at":"2026-11-15T16:15:58.290Z","step":"badtakes","status":"skipped","detail":"no bad takes/false starts detected"}
+{"at":"2026-11-15T16:15:58.328Z","step":"audio","status":"running","detail":"local loudnorm (EBU R128) + de-noise…"}
+{"at":"2026-11-15T16:16:00.494Z","step":"audio","status":"done","detail":"FFmpeg loudnorm (local)"}
+{"at":"2026-11-15T16:16:00.551Z","step":"sfx","status":"running","detail":"synthesizing cues locally…"}
+{"at":"2026-11-15T16:16:00.652Z","step":"sfx","status":"done","detail":"whoosh · pop · ding (local synthesis)"}
+{"at":"2026-11-15T16:16:00.780Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:16:00.980Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:16:03.318Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:16:27.007Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:16:51.919Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:17:18.341Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:17:46.876Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T16:18:14.281Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T16:18:42.185Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T16:19:08.491Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T16:19:33.935Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T16:19:57.904Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T16:20:22.155Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T16:20:47.909Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T16:21:12.923Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T16:21:42.282Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T16:22:10.733Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T16:22:39.741Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T16:23:08.650Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T16:23:38.373Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T16:24:04.424Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T16:24:27.810Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T16:24:51.854Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T16:25:13.466Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:25:13.482Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:25:13.496Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T16:25:13.593Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:25:13.779Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:25:16.140Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:25:39.837Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:26:04.714Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:26:31.173Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:27:00.439Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T16:27:28.884Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T16:27:57.682Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T16:28:24.877Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T16:28:51.256Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T16:29:16.191Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T16:29:18.896Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:29:19.079Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:29:21.706Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:29:28.552Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:29:28.733Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:29:31.389Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:29:39.249Z","step":"render","status":"failed","detail":"audio mux failed and video-only copy failed"}
+{"at":"2026-11-15T16:29:39.404Z","step":"render","status":"failed","detail":"audio mux failed and video-only copy failed"}
+{"at":"2026-11-15T16:29:55.822Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:30:22.221Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:30:49.374Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:31:18.304Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T16:31:46.039Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T16:32:14.164Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T16:32:40.545Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T16:33:06.305Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T16:33:30.385Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T16:33:54.742Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T16:34:19.950Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T16:34:44.712Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T16:35:13.762Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T16:35:43.083Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T16:36:12.982Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T16:36:42.915Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T16:37:13.429Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T16:37:40.349Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T16:38:04.830Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T16:38:29.854Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T16:38:52.493Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:38:52.513Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:38:52.538Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T16:38:52.801Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:38:53.006Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:38:55.562Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:39:20.137Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:39:45.693Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:40:12.463Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:40:42.043Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T16:41:10.728Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T16:41:39.790Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T16:42:06.141Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T16:42:31.866Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T16:42:56.800Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T16:43:21.959Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T16:43:48.048Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T16:44:13.609Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T16:44:43.047Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T16:45:12.432Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T16:45:42.282Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T16:46:12.319Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T16:46:43.153Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T16:47:09.955Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T16:47:34.121Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T16:47:59.039Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T16:48:21.306Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:48:21.322Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:48:21.342Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T16:48:21.562Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:48:21.740Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:48:24.479Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:48:49.126Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:49:14.663Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:49:41.637Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:50:11.266Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T16:50:39.503Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T16:51:08.521Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T16:51:35.646Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T16:52:01.149Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T16:52:25.883Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T16:52:51.126Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T16:53:17.338Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T16:53:43.069Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T16:54:12.394Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T16:54:41.714Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T16:55:11.010Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T16:55:40.607Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T16:56:11.213Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T16:56:38.153Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T16:57:02.398Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T16:57:27.241Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T16:57:49.813Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:57:49.830Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T16:57:49.855Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T16:57:50.103Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T16:57:50.293Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T16:57:52.827Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T16:58:17.455Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T16:58:43.258Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T16:59:10.065Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T16:59:39.558Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:00:07.983Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:00:36.872Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:01:04.014Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:01:30.119Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:01:54.667Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:02:19.593Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:02:45.130Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:03:10.072Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:03:39.031Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:04:07.612Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:04:37.387Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:05:07.211Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:05:37.903Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:06:04.911Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:06:29.142Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:06:53.142Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:07:15.860Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:07:15.876Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:07:15.893Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T17:07:16.120Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:07:16.301Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:07:18.673Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:07:43.504Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:08:09.363Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T17:08:36.904Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T17:09:06.533Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:09:35.887Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:10:06.350Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:10:34.966Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:11:02.670Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:11:28.704Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:11:54.901Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:12:22.032Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:12:48.660Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:13:18.686Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:13:48.297Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:14:19.054Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:14:50.201Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:15:20.723Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:15:47.710Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:16:12.002Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:16:36.794Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:17:00.330Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.4 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:17:00.346Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:17:00.365Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T17:17:00.589Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:17:00.774Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:17:03.111Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:17:27.847Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:17:53.647Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T17:18:21.397Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T17:18:51.042Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:19:19.816Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:19:48.961Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:20:16.436Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:20:43.055Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:21:08.174Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:21:33.601Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:21:59.861Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:22:25.605Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:22:55.022Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:23:24.412Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:23:54.241Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:24:24.164Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:24:54.618Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:25:21.630Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:25:45.805Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:26:10.727Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:26:34.257Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.4 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:26:34.273Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:26:34.292Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T17:26:34.510Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:26:34.695Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:26:37.461Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:27:03.166Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:27:29.797Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T17:27:58.334Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T17:28:29.249Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:28:58.527Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:29:27.701Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:29:55.148Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:30:21.829Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:30:46.902Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:31:12.252Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:31:38.558Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:32:04.494Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:32:33.931Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:33:03.419Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:33:33.307Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:34:03.265Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:34:33.750Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:35:00.788Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:35:25.120Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:35:50.070Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:36:13.601Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.4 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:36:13.617Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:36:13.636Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T17:36:13.861Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:36:14.047Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:36:16.300Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:36:41.032Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:37:06.721Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T17:37:34.133Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T17:38:03.852Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:38:32.643Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:39:01.878Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:39:29.241Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:39:55.896Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:40:20.977Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:40:46.374Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:41:12.585Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:41:38.275Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:42:07.747Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:42:37.175Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:43:07.103Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:43:37.159Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:44:07.709Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:44:34.671Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:44:58.893Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:45:23.788Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:45:47.425Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.4 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:45:47.441Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:45:47.460Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-15T17:45:47.685Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:45:47.872Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:45:50.617Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:46:16.389Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:46:25.509Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:46:25.694Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:46:26.554Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:46:26.805Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:46:28.537Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:46:29.735Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:46:34.855Z","step":"render","status":"failed","detail":"audio mux failed and video-only copy failed"}
+{"at":"2026-11-15T17:46:54.700Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:46:55.866Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:48:01.780Z","step":"compose","status":"done","detail":"7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx"}
+{"at":"2026-11-15T17:48:01.956Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.8s…"}
+{"at":"2026-11-15T17:48:04.197Z","step":"render","status":"running","detail":"frame 0/625 (0%)"}
+{"at":"2026-11-15T17:48:29.910Z","step":"render","status":"running","detail":"frame 30/625 (5%)"}
+{"at":"2026-11-15T17:48:56.623Z","step":"render","status":"running","detail":"frame 60/625 (10%)"}
+{"at":"2026-11-15T17:49:24.697Z","step":"render","status":"running","detail":"frame 90/625 (14%)"}
+{"at":"2026-11-15T17:49:54.329Z","step":"render","status":"running","detail":"frame 120/625 (19%)"}
+{"at":"2026-11-15T17:50:23.117Z","step":"render","status":"running","detail":"frame 150/625 (24%)"}
+{"at":"2026-11-15T17:50:52.246Z","step":"render","status":"running","detail":"frame 180/625 (29%)"}
+{"at":"2026-11-15T17:51:19.742Z","step":"render","status":"running","detail":"frame 210/625 (34%)"}
+{"at":"2026-11-15T17:51:46.513Z","step":"render","status":"running","detail":"frame 240/625 (38%)"}
+{"at":"2026-11-15T17:52:11.528Z","step":"render","status":"running","detail":"frame 270/625 (43%)"}
+{"at":"2026-11-15T17:52:37.214Z","step":"render","status":"running","detail":"frame 300/625 (48%)"}
+{"at":"2026-11-15T17:53:03.470Z","step":"render","status":"running","detail":"frame 330/625 (53%)"}
+{"at":"2026-11-15T17:53:29.175Z","step":"render","status":"running","detail":"frame 360/625 (58%)"}
+{"at":"2026-11-15T17:53:58.591Z","step":"render","status":"running","detail":"frame 390/625 (62%)"}
+{"at":"2026-11-15T17:54:28.033Z","step":"render","status":"running","detail":"frame 420/625 (67%)"}
+{"at":"2026-11-15T17:54:57.846Z","step":"render","status":"running","detail":"frame 450/625 (72%)"}
+{"at":"2026-11-15T17:55:27.768Z","step":"render","status":"running","detail":"frame 480/625 (77%)"}
+{"at":"2026-11-15T17:55:58.346Z","step":"render","status":"running","detail":"frame 510/625 (82%)"}
+{"at":"2026-11-15T17:56:25.342Z","step":"render","status":"running","detail":"frame 540/625 (86%)"}
+{"at":"2026-11-15T17:56:49.609Z","step":"render","status":"running","detail":"frame 570/625 (91%)"}
+{"at":"2026-11-15T17:57:14.469Z","step":"render","status":"running","detail":"frame 600/625 (96%)"}
+{"at":"2026-11-15T17:57:37.949Z","step":"render","status":"done","detail":"9:16 · 20.8s · 12.4 MB","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:57:37.966Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"}
+{"at":"2026-11-15T17:57:37.983Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-16T06:20:33.628Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T06:20:34.176Z","step":"filmcraft-build","status":"failed","detail":"place segment 0 failed: filmcraft-cli: timeline.place: invalid parameters for `timeline.place`: `duration` must be ticks or a time object like {\"seconds\": n}, {\"frame\": n} or {\"timecode\": \"…\"}"}
+{"at":"2026-11-16T06:21:02.924Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T06:21:07.168Z","step":"filmcraft-build","status":"done","detail":"7 clips · 20.8s · 91 effect cmds"}

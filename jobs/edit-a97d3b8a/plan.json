@@ -1,0 +1,99 @@
+{
+  "aspect": "9:16",
+  "baseFile": "/api/jobs/edit-a97d3b8a/media/base.mp4",
+  "audio": {
+    "volume": 1,
+    "source": "enhanced",
+    "enhanced": "/api/jobs/edit-a97d3b8a/media/enhanced.wav"
+  },
+  "cuts": {
+    "words": [
+      36
+    ],
+    "ranges": []
+  },
+  "hook": {
+    "text": "Love is understanding, giving space to each other",
+    "dur": 2.6,
+    "color": "#ffffff"
+  },
+  "cta": {
+    "text": "Follow for more on love",
+    "dur": 3
+  },
+  "zooms": [
+    0,
+    3,
+    4
+  ],
+  "broll": [],
+  "color": {
+    "brightness": 1.06,
+    "contrast": 1.08,
+    "saturation": 1.1
+  },
+  "captions": {
+    "enabled": true,
+    "style": "bold",
+    "font": "Impact (default)",
+    "size": 64,
+    "color": "#ffffff",
+    "outline": true,
+    "maxWords": 3
+  },
+  "music": null,
+  "sfx": {
+    "clips": [
+      {
+        "t": 12.92,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 0,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 14.950000000000001,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 1,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 17.36,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 2,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 18.549999999999997,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 3,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 21.019999999999996,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 4,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 0.02,
+        "clip": "pop.wav",
+        "vol": 0.5,
+        "idx": 5,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fpop.wav"
+      },
+      {
+        "t": 18.849999999999998,
+        "clip": "ding.wav",
+        "vol": 0.4,
+        "idx": 6,
+        "file": "/api/jobs/edit-a97d3b8a/media/sfx%2Fding.wav"
+      }
+    ]
+  },
+  "outName": "reel_before-11s"
+}

@@ -1,0 +1,9 @@
+[report] edit-7600974e filmcraft-build running building FilmCraft project…
+[fc-build] sequence 1080x1920@30 (V1 V2 A1 A2)
+[fc-build] imported base.mp4 (item 6)
+[fc-build] 6 clip(s) on V1, audio on A1
+[fc-build] hook “Love is understanding, giving space to each other”
+[fc-build] cta “Follow for more on love”
+[fc-build] captions on clips
+[report] edit-7600974e filmcraft-build failed s.import is not a function
+[fc-build] FAILED: s.import is not a function

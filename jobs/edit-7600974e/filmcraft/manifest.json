@@ -1,0 +1,75 @@
+{
+  "id": "edit-7600974e",
+  "aspect": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "duration": 21.8,
+  "builtAt": "2026-11-16T08:00:04.459Z",
+  "clips": [
+    {
+      "v": 8,
+      "a": 9,
+      "tlStart": 0,
+      "tlEnd": 12.933333333333334,
+      "srcStart": 0,
+      "srcEnd": 12.92,
+      "label": "What is love? Okay tell me this. Love is"
+    },
+    {
+      "v": 11,
+      "a": 12,
+      "tlStart": 12.933333333333334,
+      "tlEnd": 14.933333333333334,
+      "srcStart": 14.149999999999999,
+      "srcEnd": 16.18,
+      "label": "love, I understand that in crisis,"
+    },
+    {
+      "v": 14,
+      "a": 15,
+      "tlStart": 14.933333333333334,
+      "tlEnd": 17.366666666666667,
+      "srcStart": 17.09,
+      "srcEnd": 19.5,
+      "label": "in despair, in difficult times,"
+    },
+    {
+      "v": 17,
+      "a": 18,
+      "tlStart": 17.366666666666667,
+      "tlEnd": 18.533333333333335,
+      "srcStart": 20.37,
+      "srcEnd": 21.56,
+      "label": "it is the love, it is the savior."
+    },
+    {
+      "v": 20,
+      "a": 21,
+      "tlStart": 18.533333333333335,
+      "tlEnd": 21.033333333333335,
+      "srcStart": 22.59,
+      "srcEnd": 25.06,
+      "label": "I say time where you can understand each other,"
+    },
+    {
+      "v": 23,
+      "a": 24,
+      "tlStart": 21.033333333333335,
+      "tlEnd": 21.8,
+      "srcStart": 25.89,
+      "srcEnd": 26.67,
+      "label": "I understand this."
+    }
+  ],
+  "log": [
+    "sequence 1080x1920@30 (V1 V2 A1 A2)",
+    "imported base.mp4 (item 6)",
+    "6 clip(s) on V1, audio on A1",
+    "hook “Love is understanding, giving space to each other”",
+    "cta “Follow for more on love”",
+    "captions on clips",
+    "7 sfx on A2",
+    "applied 87 effect cmds",
+    "project saved"
+  ]
+}

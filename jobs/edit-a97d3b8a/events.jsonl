@@ -1,0 +1,48 @@
+{"at":"2026-11-15T11:22:31.544Z","step":"transcribe","status":"running","detail":"extracting 16k mono audio…"}
+{"at":"2026-11-15T11:22:31.803Z","step":"transcribe","status":"running","detail":"running WhisperX (first run downloads models)…"}
+{"at":"2026-11-15T11:22:35.322Z","step":"transcribe","status":"done","detail":"71 words · 26.4s · hi"}
+{"at":"2026-11-15T11:22:39.976Z","step":"silences","status":"running","detail":"detecting silences ≥ 0.45s…"}
+{"at":"2026-11-15T11:22:41.844Z","step":"silences","status":"done","detail":"1 silent words removed (1 gaps)"}
+{"at":"2026-11-15T11:22:41.887Z","step":"fillers","status":"done","detail":"1 filler words removed"}
+{"at":"2026-11-15T11:23:51.109Z","step":"analyze","status":"done","detail":"no bad takes; 1 veto (kept 'growing'); hook + CTA written"}
+{"at":"2026-11-15T11:23:51.274Z","step":"badtakes","status":"done","detail":"no bad takes/false starts; filler 'Oh' cut"}
+{"at":"2026-11-15T11:23:51.446Z","step":"audio","status":"running","detail":"local loudnorm (EBU R128) + de-noise…"}
+{"at":"2026-11-15T11:23:53.559Z","step":"audio","status":"done","detail":"FFmpeg loudnorm (local)"}
+{"at":"2026-11-15T11:23:57.789Z","step":"music","status":"skipped","detail":"ELEVENLABS_API_KEY not set — edit continues without music"}
+{"at":"2026-11-15T11:23:57.961Z","step":"sfx","status":"running","detail":"synthesizing cues locally…"}
+{"at":"2026-11-15T11:23:58.036Z","step":"sfx","status":"done","detail":"whoosh · pop · ding (local synthesis)"}
+{"at":"2026-11-15T11:24:05.821Z","step":"compose","status":"done","detail":"6 segments · 21.8s · 1 words cut · hook · cta · 3 zooms · 7 sfx"}
+{"at":"2026-11-15T11:24:05.990Z","step":"color","status":"done","detail":"brightness 1.06 · contrast 1.08 · sat 1.10"}
+{"at":"2026-11-15T11:24:06.151Z","step":"zooms","status":"done","detail":"3 punch-ins (medium): 'love?', 'savior', 'that is love'"}
+{"at":"2026-11-15T11:24:06.333Z","step":"broll","status":"skipped","detail":"no b-roll clips uploaded"}
+{"at":"2026-11-15T11:24:06.496Z","step":"hook","status":"done","detail":"\"Love is understanding, giving space to each other\""}
+{"at":"2026-11-15T11:24:06.662Z","step":"cta","status":"done","detail":"\"Follow for more on love\""}
+{"at":"2026-11-15T11:24:06.829Z","step":"captions","status":"done","detail":"word-by-word · Impact 64px white · min 3 words"}
+{"at":"2026-11-15T11:24:14.335Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 21.8s…"}
+{"at":"2026-11-15T11:24:20.795Z","step":"render","status":"done","detail":"9:16 · 21.8s · 16.7 MB · DEGRADED (no overlays)","out":"/home/gaurav/AI-Editor/jobs/edit-a97d3b8a/out.mp4"}
+{"at":"2026-11-15T11:24:20.802Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-a97d3b8a/out.mp4"}
+{"at":"2026-11-15T11:25:01.169Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 21.8s…"}
+{"at":"2026-11-15T11:25:03.311Z","step":"render","status":"running","detail":"frame 0/654 (0%)"}
+{"at":"2026-11-15T11:25:26.556Z","step":"render","status":"running","detail":"frame 30/654 (5%)"}
+{"at":"2026-11-15T11:25:51.005Z","step":"render","status":"running","detail":"frame 60/654 (9%)"}
+{"at":"2026-11-15T11:26:17.477Z","step":"render","status":"running","detail":"frame 90/654 (14%)"}
+{"at":"2026-11-15T11:26:46.160Z","step":"render","status":"running","detail":"frame 120/654 (18%)"}
+{"at":"2026-11-15T11:27:13.989Z","step":"render","status":"running","detail":"frame 150/654 (23%)"}
+{"at":"2026-11-15T11:27:41.891Z","step":"render","status":"running","detail":"frame 180/654 (28%)"}
+{"at":"2026-11-15T11:28:10.066Z","step":"render","status":"running","detail":"frame 210/654 (32%)"}
+{"at":"2026-11-15T11:28:36.303Z","step":"render","status":"running","detail":"frame 240/654 (37%)"}
+{"at":"2026-11-15T11:29:01.695Z","step":"render","status":"running","detail":"frame 270/654 (41%)"}
+{"at":"2026-11-15T11:29:25.548Z","step":"render","status":"running","detail":"frame 300/654 (46%)"}
+{"at":"2026-11-15T11:29:49.844Z","step":"render","status":"running","detail":"frame 330/654 (50%)"}
+{"at":"2026-11-15T11:30:14.896Z","step":"render","status":"running","detail":"frame 360/654 (55%)"}
+{"at":"2026-11-15T11:30:39.625Z","step":"render","status":"running","detail":"frame 390/654 (60%)"}
+{"at":"2026-11-15T11:31:08.152Z","step":"render","status":"running","detail":"frame 420/654 (64%)"}
+{"at":"2026-11-15T11:31:36.558Z","step":"render","status":"running","detail":"frame 450/654 (69%)"}
+{"at":"2026-11-15T11:32:05.544Z","step":"render","status":"running","detail":"frame 480/654 (73%)"}
+{"at":"2026-11-15T11:32:34.627Z","step":"render","status":"running","detail":"frame 510/654 (78%)"}
+{"at":"2026-11-15T11:33:04.301Z","step":"render","status":"running","detail":"frame 540/654 (83%)"}
+{"at":"2026-11-15T11:33:30.373Z","step":"render","status":"running","detail":"frame 570/654 (87%)"}
+{"at":"2026-11-15T11:33:53.995Z","step":"render","status":"running","detail":"frame 600/654 (92%)"}
+{"at":"2026-11-15T11:34:18.191Z","step":"render","status":"running","detail":"frame 630/654 (96%)"}
+{"at":"2026-11-15T11:34:39.253Z","step":"render","status":"done","detail":"9:16 · 21.8s · 12.7 MB","out":"/home/gaurav/AI-Editor/jobs/edit-a97d3b8a/out.mp4"}
+{"at":"2026-11-15T11:34:39.269Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-a97d3b8a/out.mp4"}

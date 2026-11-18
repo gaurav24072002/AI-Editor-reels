@@ -1,0 +1,144 @@
+{
+  "id": "edit-d0cae306",
+  "createdAt": "2026-11-14T18:18:19.687Z",
+  "status": "done",
+  "videoPath": "/home/gaurav/AI-Editor/test/talking.mp4",
+  "brollFiles": [],
+  "features": {
+    "enhanceAudio": true,
+    "removeBadTakes": true,
+    "removeFillers": true,
+    "removeSilences": true,
+    "zooms": true,
+    "color": true,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "sfx": true
+  },
+  "aspect": "9:16",
+  "outName": "talking-11s",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "95 words · 28.8s · en",
+      "at": "2026-11-14T18:18:32.761Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "false start removed (0-15), stumble 'that is,' cut, 2 beat pauses kept",
+      "at": "2026-11-14T18:21:31.681Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "3 silent words removed (1 gaps)",
+      "at": "2026-11-14T18:20:42.378Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "5 filler words removed",
+      "at": "2026-11-14T18:20:42.462Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "done",
+      "detail": "1 false start + 1 stumble removed",
+      "at": "2026-11-14T18:21:31.851Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-14T18:21:33.386Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "done",
+      "detail": "brightness 1.06 · contrast 1.08 · saturation 1.12",
+      "at": "2026-11-14T18:21:47.356Z"
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "done",
+      "detail": "punch-in at 'one click' · 'feels like cheating' · 'finished reel'",
+      "at": "2026-11-14T18:21:47.186Z"
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "done",
+      "detail": "“It cuts your talking-head videos in one click”",
+      "at": "2026-11-14T18:21:46.865Z"
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "done",
+      "detail": "“Try it today and tell me.”",
+      "at": "2026-11-14T18:21:47.024Z"
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "done",
+      "detail": "word-by-word, bold, highlight active",
+      "at": "2026-11-14T18:21:47.521Z"
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-14T18:21:33.677Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "3 segments · 20.85s · 22 words cut · hook · cta · 3 zooms · 4 sfx",
+      "at": "2026-11-15T05:20:05.987Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 20.9s · 7.5 MB",
+      "at": "2026-11-14T19:04:42.019Z"
+    },
+    {
+      "id": "music",
+      "label": "music",
+      "status": "skipped",
+      "detail": "ELEVENLABS_API_KEY not set — edit continues without music",
+      "at": "2026-11-14T18:21:33.463Z"
+    },
+    {
+      "id": "broll",
+      "label": "broll",
+      "status": "skipped",
+      "detail": "no b-roll clips uploaded",
+      "at": "2026-11-14T18:21:47.682Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "edit complete — open the editor to review or export",
+      "at": "2026-11-14T19:04:42.022Z"
+    }
+  ],
+  "updatedAt": "2026-11-15T05:20:05.987Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"
+}

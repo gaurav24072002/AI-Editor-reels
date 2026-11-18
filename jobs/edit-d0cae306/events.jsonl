@@ -1,0 +1,97 @@
+{"at":"2026-11-14T18:18:29.072Z","step":"transcribe","status":"running","detail":"extracting 16k mono audio…"}
+{"at":"2026-11-14T18:18:29.154Z","step":"transcribe","status":"running","detail":"running WhisperX (first run downloads models)…"}
+{"at":"2026-11-14T18:18:32.757Z","step":"transcribe","status":"done","detail":"95 words · 28.8s · en"}
+{"at":"2026-11-14T18:19:23.171Z","step":"silences","status":"running","detail":"detecting silences ≥ 0.45s…"}
+{"at":"2026-11-14T18:19:23.805Z","step":"silences","status":"done","detail":"14 silent words removed (1 gaps)"}
+{"at":"2026-11-14T18:19:23.849Z","step":"fillers","status":"done","detail":"4 filler words removed"}
+{"at":"2026-11-14T18:20:41.742Z","step":"silences","status":"running","detail":"detecting silences ≥ 0.45s…"}
+{"at":"2026-11-14T18:20:42.372Z","step":"silences","status":"done","detail":"3 silent words removed (1 gaps)"}
+{"at":"2026-11-14T18:20:42.422Z","step":"fillers","status":"done","detail":"5 filler words removed"}
+{"at":"2026-11-14T18:21:31.643Z","step":"analyze","status":"done","detail":"false start removed (0-15), stumble 'that is,' cut, 2 beat pauses kept"}
+{"at":"2026-11-14T18:21:31.812Z","step":"badtakes","status":"done","detail":"1 false start + 1 stumble removed"}
+{"at":"2026-11-14T18:21:31.982Z","step":"audio","status":"running","detail":"local loudnorm (EBU R128) + de-noise…"}
+{"at":"2026-11-14T18:21:33.382Z","step":"audio","status":"done","detail":"FFmpeg loudnorm (local)"}
+{"at":"2026-11-14T18:21:33.425Z","step":"music","status":"skipped","detail":"ELEVENLABS_API_KEY not set — edit continues without music"}
+{"at":"2026-11-14T18:21:33.595Z","step":"sfx","status":"running","detail":"synthesizing cues locally…"}
+{"at":"2026-11-14T18:21:33.674Z","step":"sfx","status":"done","detail":"whoosh · pop · ding (local synthesis)"}
+{"at":"2026-11-14T18:21:46.827Z","step":"hook","status":"done","detail":"“It cuts your talking-head videos in one click”"}
+{"at":"2026-11-14T18:21:46.986Z","step":"cta","status":"done","detail":"“Try it today and tell me.”"}
+{"at":"2026-11-14T18:21:47.147Z","step":"zooms","status":"done","detail":"punch-in at 'one click' · 'feels like cheating' · 'finished reel'"}
+{"at":"2026-11-14T18:21:47.318Z","step":"color","status":"done","detail":"brightness 1.06 · contrast 1.08 · saturation 1.12"}
+{"at":"2026-11-14T18:21:47.481Z","step":"captions","status":"done","detail":"word-by-word, bold, highlight active"}
+{"at":"2026-11-14T18:21:47.644Z","step":"broll","status":"skipped","detail":"no b-roll clips uploaded"}
+{"at":"2026-11-14T18:23:22.965Z","step":"compose","status":"done","detail":"0 segments · 0s · 22 words cut · hook · cta · 2 sfx"}
+{"at":"2026-11-14T18:34:56.716Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.9s…"}
+{"at":"2026-11-14T18:34:57.692Z","step":"render","status":"running","detail":"frame 0/626 (0%)"}
+{"at":"2026-11-14T18:35:00.592Z","step":"render","status":"running","detail":"frame 30/626 (5%)"}
+{"at":"2026-11-14T18:35:03.399Z","step":"render","status":"running","detail":"frame 60/626 (10%)"}
+{"at":"2026-11-14T18:35:06.343Z","step":"render","status":"running","detail":"frame 90/626 (14%)"}
+{"at":"2026-11-14T18:35:09.138Z","step":"render","status":"running","detail":"frame 120/626 (19%)"}
+{"at":"2026-11-14T18:35:12.087Z","step":"render","status":"running","detail":"frame 150/626 (24%)"}
+{"at":"2026-11-14T18:35:15.046Z","step":"render","status":"running","detail":"frame 180/626 (29%)"}
+{"at":"2026-11-14T18:35:17.974Z","step":"render","status":"running","detail":"frame 210/626 (34%)"}
+{"at":"2026-11-14T18:35:20.912Z","step":"render","status":"running","detail":"frame 240/626 (38%)"}
+{"at":"2026-11-14T18:35:23.501Z","step":"render","status":"running","detail":"frame 270/626 (43%)"}
+{"at":"2026-11-14T18:35:26.003Z","step":"render","status":"running","detail":"frame 300/626 (48%)"}
+{"at":"2026-11-14T18:35:28.520Z","step":"render","status":"running","detail":"frame 330/626 (53%)"}
+{"at":"2026-11-14T18:35:31.035Z","step":"render","status":"running","detail":"frame 360/626 (58%)"}
+{"at":"2026-11-14T18:35:33.534Z","step":"render","status":"running","detail":"frame 390/626 (62%)"}
+{"at":"2026-11-14T18:35:36.032Z","step":"render","status":"running","detail":"frame 420/626 (67%)"}
+{"at":"2026-11-14T18:35:38.551Z","step":"render","status":"running","detail":"frame 450/626 (72%)"}
+{"at":"2026-11-14T18:35:41.054Z","step":"render","status":"running","detail":"frame 480/626 (77%)"}
+{"at":"2026-11-14T18:35:43.583Z","step":"render","status":"running","detail":"frame 510/626 (81%)"}
+{"at":"2026-11-14T18:35:46.103Z","step":"render","status":"running","detail":"frame 540/626 (86%)"}
+{"at":"2026-11-14T18:35:48.599Z","step":"render","status":"running","detail":"frame 570/626 (91%)"}
+{"at":"2026-11-14T18:35:51.101Z","step":"render","status":"running","detail":"frame 600/626 (96%)"}
+{"at":"2026-11-14T18:35:53.403Z","step":"render","status":"done","detail":"WARNING: audio mix failed — video has no audio","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T18:35:53.407Z","step":"render","status":"done","detail":"9:16 · 20.9s · 0.1 MB","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T18:35:53.409Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T18:38:58.893Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.9s…"}
+{"at":"2026-11-14T18:38:59.827Z","step":"render","status":"running","detail":"frame 0/626 (0%)"}
+{"at":"2026-11-14T18:39:02.582Z","step":"render","status":"running","detail":"frame 30/626 (5%)"}
+{"at":"2026-11-14T18:39:05.289Z","step":"render","status":"running","detail":"frame 60/626 (10%)"}
+{"at":"2026-11-14T18:39:08.065Z","step":"render","status":"running","detail":"frame 90/626 (14%)"}
+{"at":"2026-11-14T18:39:10.710Z","step":"render","status":"running","detail":"frame 120/626 (19%)"}
+{"at":"2026-11-14T18:39:13.633Z","step":"render","status":"running","detail":"frame 150/626 (24%)"}
+{"at":"2026-11-14T18:39:16.479Z","step":"render","status":"running","detail":"frame 180/626 (29%)"}
+{"at":"2026-11-14T18:39:19.252Z","step":"render","status":"running","detail":"frame 210/626 (34%)"}
+{"at":"2026-11-14T18:39:22.162Z","step":"render","status":"running","detail":"frame 240/626 (38%)"}
+{"at":"2026-11-14T18:39:24.659Z","step":"render","status":"running","detail":"frame 270/626 (43%)"}
+{"at":"2026-11-14T18:39:27.194Z","step":"render","status":"running","detail":"frame 300/626 (48%)"}
+{"at":"2026-11-14T18:39:29.695Z","step":"render","status":"running","detail":"frame 330/626 (53%)"}
+{"at":"2026-11-14T18:39:32.192Z","step":"render","status":"running","detail":"frame 360/626 (58%)"}
+{"at":"2026-11-14T18:39:34.697Z","step":"render","status":"running","detail":"frame 390/626 (62%)"}
+{"at":"2026-11-14T18:39:37.226Z","step":"render","status":"running","detail":"frame 420/626 (67%)"}
+{"at":"2026-11-14T18:39:39.728Z","step":"render","status":"running","detail":"frame 450/626 (72%)"}
+{"at":"2026-11-14T18:39:42.261Z","step":"render","status":"running","detail":"frame 480/626 (77%)"}
+{"at":"2026-11-14T18:39:44.779Z","step":"render","status":"running","detail":"frame 510/626 (81%)"}
+{"at":"2026-11-14T18:39:47.328Z","step":"render","status":"running","detail":"frame 540/626 (86%)"}
+{"at":"2026-11-14T18:39:49.858Z","step":"render","status":"running","detail":"frame 570/626 (91%)"}
+{"at":"2026-11-14T18:39:52.361Z","step":"render","status":"running","detail":"frame 600/626 (96%)"}
+{"at":"2026-11-14T18:39:55.603Z","step":"render","status":"done","detail":"9:16 · 20.9s · 0.6 MB","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T18:39:55.607Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T19:00:06.371Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 20.9s…"}
+{"at":"2026-11-14T19:00:08.068Z","step":"render","status":"running","detail":"frame 0/626 (0%)"}
+{"at":"2026-11-14T19:00:26.644Z","step":"render","status":"running","detail":"frame 30/626 (5%)"}
+{"at":"2026-11-14T19:00:45.346Z","step":"render","status":"running","detail":"frame 60/626 (10%)"}
+{"at":"2026-11-14T19:01:05.439Z","step":"render","status":"running","detail":"frame 90/626 (14%)"}
+{"at":"2026-11-14T19:01:12.481Z","step":"render","status":"running","detail":"frame 120/626 (19%)"}
+{"at":"2026-11-14T19:01:21.373Z","step":"render","status":"running","detail":"frame 150/626 (24%)"}
+{"at":"2026-11-14T19:01:31.895Z","step":"render","status":"running","detail":"frame 180/626 (29%)"}
+{"at":"2026-11-14T19:01:44.141Z","step":"render","status":"running","detail":"frame 210/626 (34%)"}
+{"at":"2026-11-14T19:01:58.457Z","step":"render","status":"running","detail":"frame 240/626 (38%)"}
+{"at":"2026-11-14T19:02:14.807Z","step":"render","status":"running","detail":"frame 270/626 (43%)"}
+{"at":"2026-11-14T19:02:32.779Z","step":"render","status":"running","detail":"frame 300/626 (48%)"}
+{"at":"2026-11-14T19:02:40.144Z","step":"render","status":"running","detail":"frame 330/626 (53%)"}
+{"at":"2026-11-14T19:02:49.172Z","step":"render","status":"running","detail":"frame 360/626 (58%)"}
+{"at":"2026-11-14T19:03:00.218Z","step":"render","status":"running","detail":"frame 390/626 (62%)"}
+{"at":"2026-11-14T19:03:12.951Z","step":"render","status":"running","detail":"frame 420/626 (67%)"}
+{"at":"2026-11-14T19:03:27.003Z","step":"render","status":"running","detail":"frame 450/626 (72%)"}
+{"at":"2026-11-14T19:03:43.270Z","step":"render","status":"running","detail":"frame 480/626 (77%)"}
+{"at":"2026-11-14T19:04:01.041Z","step":"render","status":"running","detail":"frame 510/626 (81%)"}
+{"at":"2026-11-14T19:04:08.244Z","step":"render","status":"running","detail":"frame 540/626 (86%)"}
+{"at":"2026-11-14T19:04:17.524Z","step":"render","status":"running","detail":"frame 570/626 (91%)"}
+{"at":"2026-11-14T19:04:29.675Z","step":"render","status":"running","detail":"frame 600/626 (96%)"}
+{"at":"2026-11-14T19:04:42.015Z","step":"render","status":"done","detail":"9:16 · 20.9s · 7.5 MB","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-14T19:04:42.020Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-d0cae306/out.mp4"}
+{"at":"2026-11-15T05:20:05.946Z","step":"compose","status":"done","detail":"3 segments · 20.85s · 22 words cut · hook · cta · 3 zooms · 4 sfx"}

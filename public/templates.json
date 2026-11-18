@@ -1,0 +1,172 @@
+{
+  "templates": [
+    {
+      "id": "fastcuts",
+      "name": "MrBeast fast-cut energy",
+      "desc": "Rapid cuts, huge punchy captions, whoosh on every beat, non-stop motion.",
+      "sample": "templates/fastcuts.mp4",
+      "style": {
+        "captions": { "color": "#ffd60a", "size": 88, "minWords": 2, "outline": true },
+        "hookColor": "#ffd60a",
+        "zoomCount": 4, "zoomStrength": "Strong",
+        "sfx": "heavy", "pacing": "fast", "broll": "medium",
+        "music": "upbeat, driving, high-energy"
+      },
+      "structure": "Hook in <1s, then a new visual or zoom every 1.5-2.5s. Cut every breath. Biggest caption words on the payoff."
+    },
+    {
+      "id": "hormozi",
+      "name": "Hormozi listicle",
+      "desc": "Numbered points over the talking head, yellow highlights, confident delivery, b-roll under each point.",
+      "sample": "templates/hormozi.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 64, "minWords": 3, "outline": true },
+        "hookColor": "#ffffff",
+        "zoomCount": 3, "zoomStrength": "Medium",
+        "sfx": "light", "pacing": "medium", "broll": "medium",
+        "music": "subtle corporate-motivational bed, low volume"
+      },
+      "structure": "Open with the claim ('If I had to start over…'). Then 3-5 numbered points; each point gets one b-roll or zoom. End with the CTA repeated verbatim."
+    },
+    {
+      "id": "listicle",
+      "name": "Top-N listicle",
+      "desc": "'5 things I stopped doing…' — one clean beat per item, captions carry the number.",
+      "sample": "templates/listicle.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 64, "minWords": 3, "outline": true },
+        "hookColor": "#ffd60a",
+        "zoomCount": 3, "zoomStrength": "Medium",
+        "sfx": "light", "pacing": "medium", "broll": "light",
+        "music": "lofi, steady"
+      },
+      "structure": "Hook names the count. Each item = one sentence + a beat of air or zoom. No filler between items."
+    },
+    {
+      "id": "storytime",
+      "name": "Storytime",
+      "desc": "Casual, confessional. Softer captions, longer takes, feels like a friend telling you.",
+      "sample": "templates/storytime.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 54, "minWords": 4, "outline": false },
+        "hookColor": "#ffffff",
+        "zoomCount": 2, "zoomStrength": "Subtle",
+        "sfx": "none", "pacing": "relaxed", "broll": "none",
+        "music": "soft lofi or none, -18dB under voice"
+      },
+      "structure": "Keep sentence length natural — don't chop mid-thought. One slow zoom at the emotional turn. Let the story breathe."
+    },
+    {
+      "id": "pov",
+      "name": "POV / reaction",
+      "desc": "Scenario text first ('POV: …'), then the reaction plays out under it.",
+      "sample": "templates/pov.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 60, "minWords": 4, "outline": true },
+        "hookColor": "#ffffff",
+        "zoomCount": 2, "zoomStrength": "Medium",
+        "sfx": "light", "pacing": "medium", "broll": "none",
+        "music": "comedic sting at the reveal"
+      },
+      "structure": "First 1.5s: the scenario as the text hook, no dialogue. Then play the take. Zoom on the reveal."
+    },
+    {
+      "id": "motivation",
+      "name": "Dark motivation",
+      "desc": "Moody b-roll, one-liners as full-frame text, music-driven, no talking head.",
+      "sample": "templates/motivation.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 92, "minWords": 2, "outline": false },
+        "hookColor": "#ffffff",
+        "zoomCount": 3, "zoomStrength": "Medium",
+        "sfx": "none", "pacing": "medium", "broll": "heavy",
+        "music": "epic/cinematic, leads the edit"
+      },
+      "structure": "Voiceover lines land on the beat of the music. Text is 1-3 words, full frame, centered. Slow pushes on b-roll."
+    },
+    {
+      "id": "beforeafter",
+      "name": "Before → After",
+      "desc": "Two acts: the problem, the cut, the transformation reveal.",
+      "sample": "templates/beforeafter.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 72, "minWords": 2, "outline": true },
+        "hookColor": "#ff6b35",
+        "zoomCount": 3, "zoomStrength": "Strong",
+        "sfx": "heavy", "pacing": "fast", "broll": "medium",
+        "music": "build-up that drops at the reveal"
+      },
+      "structure": "Act 1 = the 'before' (muted, greyed feel). Hard cut + whoosh at the reveal. Act 2 = full color, fast cuts, payoff caption."
+    },
+    {
+      "id": "greenscreen",
+      "name": "Green-screen commentary",
+      "desc": "You over a related video/chart — the clip behind IS the topic.",
+      "sample": "templates/greenscreen.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 58, "minWords": 3, "outline": true },
+        "hookColor": "#4cc9f0",
+        "zoomCount": 2, "zoomStrength": "Medium",
+        "sfx": "light", "pacing": "medium", "broll": "heavy",
+        "music": "none or very low"
+      },
+      "structure": "Reference the thing on screen in the hook. Zoom when pointing at a detail. Keep the background clip readable."
+    },
+    {
+      "id": "unboxing",
+      "name": "Unboxing / review",
+      "desc": "Product-forward: open, show, verdict. Pops on each reveal.",
+      "sample": "templates/unboxing.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 64, "minWords": 3, "outline": true },
+        "hookColor": "#4cc9f0",
+        "zoomCount": 3, "zoomStrength": "Medium",
+        "sfx": "heavy", "pacing": "medium", "broll": "medium",
+        "music": "light, neutral"
+      },
+      "structure": "Hook = the verdict in one line. Each part of the product = one zoom + one sentence. End with buy/don't-buy."
+    },
+    {
+      "id": "tutorial",
+      "name": "Step-by-step tutorial",
+      "desc": "STEP 1, 2, 3 — screen b-roll per step, captions carry the instruction.",
+      "sample": "templates/tutorial.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 60, "minWords": 4, "outline": true },
+        "hookColor": "#ffd60a",
+        "zoomCount": 3, "zoomStrength": "Medium",
+        "sfx": "light", "pacing": "medium", "broll": "heavy",
+        "music": "neutral lofi"
+      },
+      "structure": "Promise the outcome in the hook. Each step: caption 'STEP n' → action b-roll → one-line why. No tangents."
+    },
+    {
+      "id": "faceless",
+      "name": "Faceless narration",
+      "desc": "Voiceover over stock b-roll, centered captions, zero face on camera.",
+      "sample": "templates/faceless.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 68, "minWords": 3, "outline": true },
+        "hookColor": "#ffffff",
+        "zoomCount": 3, "zoomStrength": "Subtle",
+        "sfx": "light", "pacing": "medium", "broll": "heavy",
+        "music": "atmospheric bed"
+      },
+      "structure": "New b-roll every 2-4s, matched to the sentence. Captions centered (no talking head to avoid). Slow Ken-Burns on stills."
+    },
+    {
+      "id": "rant",
+      "name": "Hot-take rant",
+      "desc": "Aggressive pace, big angry hook, zooms on every accusation, no mercy cuts.",
+      "sample": "templates/rant.mp4",
+      "style": {
+        "captions": { "color": "#ffffff", "size": 76, "minWords": 2, "outline": true },
+        "hookColor": "#ef4444",
+        "zoomCount": 4, "zoomStrength": "Strong",
+        "sfx": "heavy", "pacing": "fast", "broll": "none",
+        "music": "dark tension bed"
+      },
+      "structure": "Hook = the most provocative line of the take, verbatim. Cut every pause. Zoom on each charge. Land the punchline clean."
+    }
+  ]
+}

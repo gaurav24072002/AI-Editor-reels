@@ -1,0 +1,12 @@
+{
+  "cutRanges": [],
+  "extraCutWords": [],
+  "excludeSilence": [15],
+  "excludeFillers": [],
+  "hook": { "text": "Love is understanding, giving space to each other" },
+  "cta": { "text": "Follow for more on love" },
+  "zoomAtWords": [55, 67],
+  "broll": [],
+  "musicPrompt": "atmospheric bed, warm and subtle",
+  "color": { "brightness": 1.05, "contrast": 1.07, "saturation": 1.08 }
+}

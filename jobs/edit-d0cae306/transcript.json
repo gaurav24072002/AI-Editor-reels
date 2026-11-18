@@ -1,0 +1,576 @@
+{
+  "language": "en",
+  "duration": 28.84,
+  "words": [
+    {
+      "word": "So,",
+      "start": 0,
+      "end": 0.18,
+      "line": 0
+    },
+    {
+      "word": "um,",
+      "start": 0.56,
+      "end": 0.72,
+      "line": 0
+    },
+    {
+      "word": "before",
+      "start": 1.26,
+      "end": 1.48,
+      "line": 0
+    },
+    {
+      "word": "we",
+      "start": 1.48,
+      "end": 1.66,
+      "line": 0
+    },
+    {
+      "word": "get",
+      "start": 1.66,
+      "end": 1.8,
+      "line": 0
+    },
+    {
+      "word": "started,",
+      "start": 1.8,
+      "end": 2.18,
+      "line": 0
+    },
+    {
+      "word": "I",
+      "start": 2.48,
+      "end": 2.56,
+      "line": 0
+    },
+    {
+      "word": "want",
+      "start": 2.56,
+      "end": 2.74,
+      "line": 0
+    },
+    {
+      "word": "to",
+      "start": 2.74,
+      "end": 2.9,
+      "line": 0
+    },
+    {
+      "word": "share",
+      "start": 2.9,
+      "end": 3.12,
+      "line": 0
+    },
+    {
+      "word": "something",
+      "start": 3.12,
+      "end": 3.46,
+      "line": 0
+    },
+    {
+      "word": "that",
+      "start": 3.46,
+      "end": 3.68,
+      "line": 0
+    },
+    {
+      "word": "changed",
+      "start": 3.68,
+      "end": 4.02,
+      "line": 0
+    },
+    {
+      "word": "my",
+      "start": 4.02,
+      "end": 4.28,
+      "line": 0
+    },
+    {
+      "word": "whole",
+      "start": 4.28,
+      "end": 4.48,
+      "line": 0
+    },
+    {
+      "word": "workflow.",
+      "start": 4.48,
+      "end": 4.98,
+      "line": 0
+    },
+    {
+      "word": "So",
+      "start": 5.38,
+      "end": 5.48,
+      "line": 1
+    },
+    {
+      "word": "before",
+      "start": 5.48,
+      "end": 5.76,
+      "line": 1
+    },
+    {
+      "word": "we",
+      "start": 5.76,
+      "end": 6.02,
+      "line": 1
+    },
+    {
+      "word": "get",
+      "start": 6.02,
+      "end": 6.14,
+      "line": 1
+    },
+    {
+      "word": "started,",
+      "start": 6.14,
+      "end": 6.56,
+      "line": 1
+    },
+    {
+      "word": "I",
+      "start": 6.88,
+      "end": 7.06,
+      "line": 1
+    },
+    {
+      "word": "want",
+      "start": 7.06,
+      "end": 7.22,
+      "line": 1
+    },
+    {
+      "word": "to",
+      "start": 7.22,
+      "end": 7.36,
+      "line": 1
+    },
+    {
+      "word": "share",
+      "start": 7.36,
+      "end": 7.64,
+      "line": 1
+    },
+    {
+      "word": "something",
+      "start": 7.64,
+      "end": 8.04,
+      "line": 1
+    },
+    {
+      "word": "that",
+      "start": 8.04,
+      "end": 8.24,
+      "line": 1
+    },
+    {
+      "word": "changed",
+      "start": 8.24,
+      "end": 8.66,
+      "line": 1
+    },
+    {
+      "word": "my",
+      "start": 8.66,
+      "end": 8.88,
+      "line": 1
+    },
+    {
+      "word": "whole",
+      "start": 8.88,
+      "end": 9.14,
+      "line": 1
+    },
+    {
+      "word": "workflow.",
+      "start": 9.14,
+      "end": 9.64,
+      "line": 1
+    },
+    {
+      "word": "It",
+      "start": 9.98,
+      "end": 10.1,
+      "line": 2
+    },
+    {
+      "word": "is",
+      "start": 10.1,
+      "end": 10.2,
+      "line": 2
+    },
+    {
+      "word": "a",
+      "start": 10.2,
+      "end": 10.3,
+      "line": 2
+    },
+    {
+      "word": "small",
+      "start": 10.3,
+      "end": 10.54,
+      "line": 2
+    },
+    {
+      "word": "AI",
+      "start": 10.54,
+      "end": 10.8,
+      "line": 2
+    },
+    {
+      "word": "editor,",
+      "start": 10.8,
+      "end": 11.28,
+      "line": 2
+    },
+    {
+      "word": "and",
+      "start": 11.68,
+      "end": 11.86,
+      "line": 2
+    },
+    {
+      "word": "it",
+      "start": 11.86,
+      "end": 12,
+      "line": 2
+    },
+    {
+      "word": "cuts",
+      "start": 12,
+      "end": 12.18,
+      "line": 2
+    },
+    {
+      "word": "your",
+      "start": 12.18,
+      "end": 12.38,
+      "line": 2
+    },
+    {
+      "word": "talking",
+      "start": 12.38,
+      "end": 12.72,
+      "line": 2
+    },
+    {
+      "word": "-head",
+      "start": 12.72,
+      "end": 13,
+      "line": 2
+    },
+    {
+      "word": "videos",
+      "start": 13,
+      "end": 13.34,
+      "line": 2
+    },
+    {
+      "word": "in",
+      "start": 13.34,
+      "end": 13.6,
+      "line": 2
+    },
+    {
+      "word": "one",
+      "start": 13.6,
+      "end": 13.8,
+      "line": 2
+    },
+    {
+      "word": "click,",
+      "start": 13.8,
+      "end": 14.08,
+      "line": 2
+    },
+    {
+      "word": "like,",
+      "start": 14.42,
+      "end": 14.64,
+      "line": 2
+    },
+    {
+      "word": "I",
+      "start": 14.9,
+      "end": 15.06,
+      "line": 2
+    },
+    {
+      "word": "mean,",
+      "start": 15.06,
+      "end": 15.26,
+      "line": 2
+    },
+    {
+      "word": "it",
+      "start": 15.62,
+      "end": 15.68,
+      "line": 3
+    },
+    {
+      "word": "honestly",
+      "start": 15.68,
+      "end": 16,
+      "line": 3
+    },
+    {
+      "word": "feels",
+      "start": 16,
+      "end": 16.46,
+      "line": 3
+    },
+    {
+      "word": "like",
+      "start": 16.46,
+      "end": 16.78,
+      "line": 3
+    },
+    {
+      "word": "cheating.",
+      "start": 16.78,
+      "end": 17.16,
+      "line": 3
+    },
+    {
+      "word": "You",
+      "start": 17.52,
+      "end": 17.62,
+      "line": 4
+    },
+    {
+      "word": "just",
+      "start": 17.62,
+      "end": 17.82,
+      "line": 4
+    },
+    {
+      "word": "press",
+      "start": 17.82,
+      "end": 18.14,
+      "line": 4
+    },
+    {
+      "word": "one",
+      "start": 18.14,
+      "end": 18.5,
+      "line": 4
+    },
+    {
+      "word": "button,",
+      "start": 18.5,
+      "end": 18.88,
+      "line": 4
+    },
+    {
+      "word": "and",
+      "start": 19.38,
+      "end": 19.52,
+      "line": 4
+    },
+    {
+      "word": "it",
+      "start": 19.52,
+      "end": 19.66,
+      "line": 4
+    },
+    {
+      "word": "removes",
+      "start": 19.66,
+      "end": 19.96,
+      "line": 4
+    },
+    {
+      "word": "the",
+      "start": 19.96,
+      "end": 20.2,
+      "line": 4
+    },
+    {
+      "word": "silences,",
+      "start": 20.2,
+      "end": 20.64,
+      "line": 4
+    },
+    {
+      "word": "the",
+      "start": 21.1,
+      "end": 21.26,
+      "line": 4
+    },
+    {
+      "word": "bad",
+      "start": 21.26,
+      "end": 21.46,
+      "line": 4
+    },
+    {
+      "word": "takes,",
+      "start": 21.46,
+      "end": 21.8,
+      "line": 4
+    },
+    {
+      "word": "and",
+      "start": 22.22,
+      "end": 22.42,
+      "line": 4
+    },
+    {
+      "word": "it",
+      "start": 22.42,
+      "end": 22.52,
+      "line": 4
+    },
+    {
+      "word": "adds",
+      "start": 22.52,
+      "end": 22.8,
+      "line": 4
+    },
+    {
+      "word": "captions,",
+      "start": 22.8,
+      "end": 23.18,
+      "line": 4
+    },
+    {
+      "word": "and",
+      "start": 23.6,
+      "end": 23.76,
+      "line": 5
+    },
+    {
+      "word": "that",
+      "start": 23.76,
+      "end": 23.92,
+      "line": 5
+    },
+    {
+      "word": "is,",
+      "start": 23.92,
+      "end": 24.16,
+      "line": 5
+    },
+    {
+      "word": "um,",
+      "start": 24.46,
+      "end": 24.6,
+      "line": 5
+    },
+    {
+      "word": "that",
+      "start": 24.98,
+      "end": 25.14,
+      "line": 5
+    },
+    {
+      "word": "is",
+      "start": 25.14,
+      "end": 25.26,
+      "line": 5
+    },
+    {
+      "word": "all",
+      "start": 25.26,
+      "end": 25.38,
+      "line": 5
+    },
+    {
+      "word": "it",
+      "start": 25.38,
+      "end": 25.52,
+      "line": 5
+    },
+    {
+      "word": "takes",
+      "start": 25.52,
+      "end": 25.68,
+      "line": 5
+    },
+    {
+      "word": "to",
+      "start": 25.68,
+      "end": 25.9,
+      "line": 5
+    },
+    {
+      "word": "get",
+      "start": 25.9,
+      "end": 26.02,
+      "line": 5
+    },
+    {
+      "word": "a",
+      "start": 26.02,
+      "end": 26.12,
+      "line": 5
+    },
+    {
+      "word": "finished",
+      "start": 26.12,
+      "end": 26.36,
+      "line": 5
+    },
+    {
+      "word": "reel.",
+      "start": 26.36,
+      "end": 26.72,
+      "line": 5
+    },
+    {
+      "word": "Try",
+      "start": 26.72,
+      "end": 27.2,
+      "line": 6
+    },
+    {
+      "word": "it",
+      "start": 27.2,
+      "end": 27.36,
+      "line": 6
+    },
+    {
+      "word": "today",
+      "start": 27.36,
+      "end": 27.54,
+      "line": 6
+    },
+    {
+      "word": "and",
+      "start": 27.54,
+      "end": 27.8,
+      "line": 6
+    },
+    {
+      "word": "tell",
+      "start": 27.8,
+      "end": 28.04,
+      "line": 6
+    },
+    {
+      "word": "me",
+      "start": 28.04,
+      "end": 28.22,
+      "line": 6
+    },
+    {
+      "word": "what",
+      "start": 28.22,
+      "end": 28.42,
+      "line": 6
+    },
+    {
+      "word": "you",
+      "start": 28.42,
+      "end": 28.6,
+      "line": 6
+    },
+    {
+      "word": "think.",
+      "start": 28.6,
+      "end": 28.84,
+      "line": 6
+    }
+  ]
+}

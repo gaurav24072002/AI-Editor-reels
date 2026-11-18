@@ -1,0 +1,41 @@
+[
+  {
+    "at": "2026-11-16T07:33:14.936Z",
+    "t0": 0,
+    "t1": 12.92,
+    "clip": 8,
+    "instruction": "zoom in",
+    "status": "applied",
+    "result": "zoom → 118% on this clip · ⚠ 1 command(s) flagged",
+    "_i": 0,
+    "at_done": "2026-11-16T07:33:14.987Z",
+    "badLines": [
+      "{\"completed\":0,\"failed\":1,\"results\":[{\"error\":\"edit failed: no such track item ClipId(8)\",\"ok\":false}]}"
+    ],
+    "frame": "/api/jobs/edit-7600974e/filmcraft/frame?i=0"
+  },
+  {
+    "at": "2026-11-16T08:01:07.997Z",
+    "t0": 12.92,
+    "t1": 14.95,
+    "clip": 11,
+    "instruction": "zoom in",
+    "status": "applied",
+    "result": "zoom → 118% on this clip",
+    "_i": 1,
+    "at_done": "2026-11-16T08:01:08.048Z",
+    "frame": "/api/jobs/edit-7600974e/filmcraft/frame?i=1"
+  },
+  {
+    "at": "2026-11-16T08:31:37.221Z",
+    "t0": 14.95,
+    "t1": 17.36,
+    "clip": 14,
+    "instruction": "quieter",
+    "status": "applied",
+    "result": "voice −6dB on this clip",
+    "_i": 2,
+    "at_done": "2026-11-16T08:31:37.273Z",
+    "frame": "/api/jobs/edit-7600974e/filmcraft/frame?i=2"
+  }
+]

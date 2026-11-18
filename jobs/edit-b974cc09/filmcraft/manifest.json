@@ -1,0 +1,30 @@
+{
+  "id": "edit-b974cc09",
+  "aspect": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "duration": 13.26,
+  "builtAt": "2026-11-16T18:32:55.134Z",
+  "clips": [
+    {
+      "i": 0,
+      "v": 8,
+      "a": 9,
+      "tlStart": 0,
+      "tlEnd": 13.26,
+      "srcStart": 0,
+      "srcEnd": 13.26,
+      "label": "Jason Pargin says, accept that all of your heroes"
+    }
+  ],
+  "log": [
+    "sequence 1080x1920@30 (V1 V2 A1 A2)",
+    "imported base.mp4 (item 6)",
+    "1 clip(s) on V1, audio on A1",
+    "cta “Follow for more”",
+    "captions on clips",
+    "1 sfx on A2",
+    "applied 19 effect cmds",
+    "project saved"
+  ]
+}

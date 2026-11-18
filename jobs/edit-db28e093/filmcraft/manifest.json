@@ -1,0 +1,30 @@
+{
+  "id": "edit-db28e093",
+  "aspect": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "duration": 14.94,
+  "builtAt": "2026-11-16T16:43:23.926Z",
+  "clips": [
+    {
+      "i": 0,
+      "v": 8,
+      "a": 9,
+      "tlStart": 0,
+      "tlEnd": 14.94,
+      "srcStart": 0,
+      "srcEnd": 14.94,
+      "label": "I think it's self -realization. So I'm constantly aware"
+    }
+  ],
+  "log": [
+    "sequence 1080x1920@30 (V1 V2 A1 A2)",
+    "imported base.mp4 (item 6)",
+    "1 clip(s) on V1, audio on A1",
+    "cta “Follow for more”",
+    "captions on clips",
+    "1 sfx on A2",
+    "applied 19 effect cmds",
+    "project saved"
+  ]
+}

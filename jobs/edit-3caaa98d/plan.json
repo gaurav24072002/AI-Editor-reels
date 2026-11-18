@@ -1,0 +1,135 @@
+{
+  "aspect": "9:16",
+  "baseFile": "/api/jobs/edit-3caaa98d/media/base.mp4",
+  "audio": {
+    "volume": 1,
+    "source": "enhanced",
+    "enhanced": "/api/jobs/edit-3caaa98d/media/enhanced.wav"
+  },
+  "cuts": {
+    "words": [
+      15,
+      36
+    ],
+    "ranges": []
+  },
+  "hook": {
+    "text": "3 mistakes killing your growth",
+    "dur": 2.6,
+    "color": "#ffd60a"
+  },
+  "cta": {
+    "text": "Follow for more",
+    "dur": 3
+  },
+  "zooms": [
+    0,
+    4
+  ],
+  "broll": [],
+  "motion": [
+    {
+      "type": "burst",
+      "t": 0.25,
+      "dur": 1.1,
+      "color": "#ffd60a",
+      "x": 0.5,
+      "y": 0.32,
+      "text": ""
+    },
+    {
+      "type": "pulse",
+      "t": 9.936,
+      "dur": 0.9,
+      "color": "#22d3ee",
+      "x": 0.5,
+      "y": 0.5,
+      "text": ""
+    },
+    {
+      "type": "sweep",
+      "t": 18.979999999999997,
+      "dur": 0.9,
+      "color": "#ffd60a",
+      "y": 0.805,
+      "text": ""
+    }
+  ],
+  "color": {
+    "brightness": 1.05,
+    "contrast": 1.08,
+    "saturation": 1.1
+  },
+  "captions": {
+    "enabled": true,
+    "style": "bold",
+    "font": "Impact",
+    "size": 64,
+    "color": "#ffffff",
+    "outline": true,
+    "maxWords": 4
+  },
+  "music": null,
+  "sfx": {
+    "clips": [
+      {
+        "t": 5.4,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 0,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 11.969999999999999,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 1,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 14,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 2,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 16.41,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 3,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 17.599999999999998,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 4,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 20.069999999999997,
+        "clip": "whoosh.wav",
+        "vol": 0.32,
+        "idx": 5,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fwhoosh.wav"
+      },
+      {
+        "t": 0.02,
+        "clip": "pop.wav",
+        "vol": 0.5,
+        "idx": 6,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fpop.wav"
+      },
+      {
+        "t": 17.9,
+        "clip": "ding.wav",
+        "vol": 0.4,
+        "idx": 7,
+        "file": "/api/jobs/edit-3caaa98d/media/sfx%2Fding.wav"
+      }
+    ]
+  },
+  "watermark": null,
+  "outName": "auto-test-1"
+}

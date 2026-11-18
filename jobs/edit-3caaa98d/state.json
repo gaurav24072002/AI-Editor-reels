@@ -1,0 +1,165 @@
+{
+  "id": "edit-3caaa98d",
+  "createdAt": "2026-11-15T16:15:50.093Z",
+  "status": "failed",
+  "videoPath": "/home/gaurav/AI-Editor/jobs/edit-7600974e/media/base.mp4",
+  "brollFiles": [],
+  "features": {
+    "removeSilences": true,
+    "removeFillers": true,
+    "removeBadTakes": true,
+    "enhanceAudio": true,
+    "color": true,
+    "zooms": true,
+    "broll": false,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "music": false,
+    "sfx": true
+  },
+  "settings": {
+    "textHook": {
+      "text": "3 mistakes killing your growth",
+      "color": "#ffd60a"
+    },
+    "cta": {
+      "text": "Follow for more"
+    },
+    "zooms": {
+      "strength": "Medium"
+    },
+    "captions": {
+      "custom": true,
+      "font": "Impact",
+      "size": 64,
+      "color": "#ffffff",
+      "minWords": 4
+    },
+    "color": {
+      "brightness": true,
+      "lift": true
+    },
+    "music": {
+      "style": "subtle motivational bed"
+    }
+  },
+  "aspect": "9:16",
+  "outName": "auto-test-1",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "71 words · 26.4s · hi",
+      "at": "2026-11-15T16:15:55.354Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "auto-editor: 0 word-cuts, 3 zooms · hook “3 mistakes killing your growth”",
+      "at": "2026-11-15T16:15:58.283Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "1 silent words removed (1 gaps)",
+      "at": "2026-11-15T16:15:58.067Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "1 filler words removed",
+      "at": "2026-11-15T16:15:58.145Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "skipped",
+      "detail": "no bad takes/false starts detected",
+      "at": "2026-11-15T16:15:58.293Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-15T16:16:00.499Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-15T16:16:00.655Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "7 segments · 20.85s · 2 words cut · hook · cta · 2 zooms · 8 sfx",
+      "at": "2026-11-15T17:48:01.818Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 20.8s · 12.4 MB",
+      "at": "2026-11-15T17:57:37.962Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "automatic edit complete",
+      "at": "2026-11-15T17:57:38.020Z"
+    },
+    {
+      "id": "filmcraft-build",
+      "label": "filmcraft-build",
+      "status": "done",
+      "detail": "7 clips · 20.8s · 91 effect cmds",
+      "at": "2026-11-16T06:21:07.171Z"
+    }
+  ],
+  "updatedAt": "2026-11-16T06:21:07.171Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-3caaa98d/out.mp4"
+}

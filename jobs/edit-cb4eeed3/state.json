@@ -1,0 +1,195 @@
+{
+  "id": "edit-cb4eeed3",
+  "createdAt": "2026-11-15T18:49:56.416Z",
+  "status": "done",
+  "videoPath": "/home/gaurav/AI-Editor/jobs/inbox/1794768251518-655b096b-base.mp4",
+  "brollFiles": [],
+  "features": {
+    "enhanceAudio": true,
+    "removeBadTakes": true,
+    "removeFillers": true,
+    "removeSilences": true,
+    "broll": true,
+    "zooms": true,
+    "color": true,
+    "hook": true,
+    "cta": true,
+    "captions": true,
+    "music": false,
+    "sfx": true
+  },
+  "settings": {
+    "brand": {},
+    "fillers": {
+      "customList": ""
+    },
+    "silences": {
+      "minGap": 0.45
+    },
+    "captions": {
+      "custom": false,
+      "font": "Impact (default)",
+      "size": 64,
+      "color": "#ffffff",
+      "outline": true,
+      "minWords": 2
+    },
+    "broll": {
+      "aiPrompt": "",
+      "clips": []
+    },
+    "emotion": {
+      "desc": ""
+    },
+    "instructions": "",
+    "zooms": {
+      "strength": "Auto (editor decides)"
+    },
+    "music": {
+      "style": ""
+    },
+    "color": {
+      "brightness": true,
+      "lift": true,
+      "whiteBalance": true
+    },
+    "hook": {
+      "audience": ""
+    },
+    "textHook": {
+      "mode": "AI writes it from the transcript",
+      "text": "",
+      "color": "#ffffff"
+    },
+    "cta": {
+      "text": ""
+    },
+    "transcribe": {
+      "language": "Auto-detect (multilingual)",
+      "vocab": "",
+      "censor": false
+    },
+    "targetLength": {
+      "mode": "Auto (editor decides)",
+      "seconds": 30
+    }
+  },
+  "aspect": "9:16",
+  "outName": "LukeRaw-11s",
+  "steps": [
+    {
+      "id": "transcribe",
+      "label": "Transcribe (WhisperX, word-level)",
+      "status": "done",
+      "detail": "50 words · 14.9s · en",
+      "at": "2026-11-15T18:50:02.647Z"
+    },
+    {
+      "id": "analyze",
+      "label": "Analyze take (Claude: bad takes, false starts, hook, CTA)",
+      "status": "done",
+      "detail": "auto-editor: 0 word-cuts, 1 zooms · no hook",
+      "at": "2026-11-15T18:50:03.511Z"
+    },
+    {
+      "id": "silences",
+      "label": "Remove silences",
+      "status": "done",
+      "detail": "0 silent words removed (1 gaps)",
+      "at": "2026-11-15T18:50:03.294Z"
+    },
+    {
+      "id": "fillers",
+      "label": "Remove filler words",
+      "status": "done",
+      "detail": "0 filler words removed",
+      "at": "2026-11-15T18:50:03.376Z"
+    },
+    {
+      "id": "badtakes",
+      "label": "Remove bad takes & false starts",
+      "status": "skipped",
+      "detail": "no bad takes/false starts detected",
+      "at": "2026-11-15T18:50:03.522Z"
+    },
+    {
+      "id": "audio",
+      "label": "Enhance audio",
+      "status": "done",
+      "detail": "FFmpeg loudnorm (local)",
+      "at": "2026-11-15T18:50:04.707Z"
+    },
+    {
+      "id": "color",
+      "label": "Auto color correction",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "zooms",
+      "label": "Add zoom cuts",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "broll",
+      "label": "Place b-roll",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "hook",
+      "label": "Write text hook",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "cta",
+      "label": "Write call-to-action card",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "captions",
+      "label": "Animated word-by-word captions",
+      "status": "pending",
+      "detail": "",
+      "at": null
+    },
+    {
+      "id": "sfx",
+      "label": "Add sound effects",
+      "status": "done",
+      "detail": "whoosh · pop · ding (local synthesis)",
+      "at": "2026-11-15T18:50:04.824Z"
+    },
+    {
+      "id": "compose",
+      "label": "Compose edit plan",
+      "status": "done",
+      "detail": "1 segments · 14.94s · 0 words cut · cta · 1 zooms · 1 sfx",
+      "at": "2026-11-15T18:50:04.973Z"
+    },
+    {
+      "id": "render",
+      "label": "Render MP4 (headless Chrome + FFmpeg)",
+      "status": "done",
+      "detail": "9:16 · 14.9s · 5.8 MB",
+      "at": "2026-11-15T18:54:31.734Z"
+    },
+    {
+      "id": "finished",
+      "label": "finished",
+      "status": "done",
+      "detail": "automatic edit complete",
+      "at": "2026-11-15T18:54:31.756Z"
+    }
+  ],
+  "updatedAt": "2026-11-15T18:54:31.756Z",
+  "out": "/home/gaurav/AI-Editor/jobs/edit-cb4eeed3/out.mp4"
+}

@@ -1,0 +1,40 @@
+{"at":"2026-11-16T09:13:17.684Z","step":"transcribe","status":"running","detail":"extracting 16k mono audio…"}
+{"at":"2026-11-16T09:13:17.780Z","step":"transcribe","status":"running","detail":"running WhisperX (first run downloads models)…"}
+{"at":"2026-11-16T09:13:21.311Z","step":"transcribe","status":"done","detail":"50 words · 14.9s · en"}
+{"at":"2026-11-16T09:13:21.418Z","step":"silences","status":"running","detail":"detecting silences ≥ 0.45s…"}
+{"at":"2026-11-16T09:13:22.034Z","step":"silences","status":"done","detail":"0 silent words removed (1 gaps)"}
+{"at":"2026-11-16T09:13:22.087Z","step":"fillers","status":"done","detail":"0 filler words removed"}
+{"at":"2026-11-16T09:13:22.146Z","step":"analyze","status":"done","detail":"auto-editor: 0 word-cuts, 1 zooms · no hook"}
+{"at":"2026-11-16T09:13:22.193Z","step":"badtakes","status":"skipped","detail":"no bad takes/false starts detected"}
+{"at":"2026-11-16T09:13:22.238Z","step":"audio","status":"running","detail":"local loudnorm (EBU R128) + de-noise…"}
+{"at":"2026-11-16T09:13:23.418Z","step":"audio","status":"done","detail":"FFmpeg loudnorm (local)"}
+{"at":"2026-11-16T09:13:23.474Z","step":"sfx","status":"running","detail":"synthesizing cues locally…"}
+{"at":"2026-11-16T09:13:23.552Z","step":"sfx","status":"done","detail":"whoosh · pop · ding (local synthesis)"}
+{"at":"2026-11-16T09:13:23.606Z","step":"compose","status":"done","detail":"1 segments · 14.94s · 0 words cut · cta · 1 zooms · 1 sfx"}
+{"at":"2026-11-16T09:13:23.708Z","step":"render","status":"running","detail":"rendering 1080x1920 @ 30fps · 14.9s…"}
+{"at":"2026-11-16T09:13:25.050Z","step":"render","status":"running","detail":"frame 0/448 (0%)"}
+{"at":"2026-11-16T09:13:42.785Z","step":"render","status":"running","detail":"frame 30/448 (7%)"}
+{"at":"2026-11-16T09:14:01.438Z","step":"render","status":"running","detail":"frame 60/448 (13%)"}
+{"at":"2026-11-16T09:14:19.161Z","step":"render","status":"running","detail":"frame 90/448 (20%)"}
+{"at":"2026-11-16T09:14:37.380Z","step":"render","status":"running","detail":"frame 120/448 (27%)"}
+{"at":"2026-11-16T09:14:56.054Z","step":"render","status":"running","detail":"frame 150/448 (33%)"}
+{"at":"2026-11-16T09:15:14.610Z","step":"render","status":"running","detail":"frame 180/448 (40%)"}
+{"at":"2026-11-16T09:15:33.670Z","step":"render","status":"running","detail":"frame 210/448 (47%)"}
+{"at":"2026-11-16T09:15:51.568Z","step":"render","status":"running","detail":"frame 240/448 (54%)"}
+{"at":"2026-11-16T09:16:09.264Z","step":"render","status":"running","detail":"frame 270/448 (60%)"}
+{"at":"2026-11-16T09:16:26.045Z","step":"render","status":"running","detail":"frame 300/448 (67%)"}
+{"at":"2026-11-16T09:16:42.322Z","step":"render","status":"running","detail":"frame 330/448 (74%)"}
+{"at":"2026-11-16T09:16:59.421Z","step":"render","status":"running","detail":"frame 360/448 (80%)"}
+{"at":"2026-11-16T09:17:15.521Z","step":"render","status":"running","detail":"frame 390/448 (87%)"}
+{"at":"2026-11-16T09:17:32.683Z","step":"render","status":"running","detail":"frame 420/448 (94%)"}
+{"at":"2026-11-16T09:17:50.376Z","step":"render","status":"done","detail":"9:16 · 14.9s · 5.8 MB","out":"/home/gaurav/AI-Editor/jobs/edit-db28e093/out.mp4"}
+{"at":"2026-11-16T09:17:50.392Z","step":"finished","status":"done","detail":"edit complete — open the editor to review or export","out":"/home/gaurav/AI-Editor/jobs/edit-db28e093/out.mp4"}
+{"at":"2026-11-16T09:17:50.414Z","step":"finished","status":"done","detail":"automatic edit complete"}
+{"at":"2026-11-16T09:18:01.037Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T09:18:01.742Z","step":"filmcraft-build","status":"done","detail":"sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok"}
+{"at":"2026-11-16T16:28:39.683Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T16:28:40.433Z","step":"filmcraft-build","status":"done","detail":"sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok"}
+{"at":"2026-11-16T16:30:46.669Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T16:30:47.390Z","step":"filmcraft-build","status":"done","detail":"sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok"}
+{"at":"2026-11-16T16:43:23.723Z","step":"filmcraft-build","status":"running","detail":"building FilmCraft project…"}
+{"at":"2026-11-16T16:43:24.462Z","step":"filmcraft-build","status":"done","detail":"sequence 1080x1920@30 (V1 V2 A1 A2) · imported base.mp4 (item 6) · 1 clip(s) on V1, audio on A1 · cta “Follow for more” · captions on clips · 1 sfx on A2 · applied 19 effect cmds · project saved · verification frame @ 1.0s ok"}

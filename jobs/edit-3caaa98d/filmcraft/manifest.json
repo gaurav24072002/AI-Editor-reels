@@ -1,0 +1,89 @@
+{
+  "id": "edit-3caaa98d",
+  "aspect": "9:16",
+  "width": 1080,
+  "height": 1920,
+  "duration": 20.849999999999998,
+  "builtAt": "2026-11-16T06:21:06.530Z",
+  "clips": [
+    {
+      "i": 0,
+      "v": 8,
+      "a": 9,
+      "tlStart": 0,
+      "tlEnd": 5.4,
+      "srcStart": 0,
+      "srcEnd": 5.4,
+      "label": "What is love? Okay tell me this. Love is"
+    },
+    {
+      "i": 1,
+      "v": 11,
+      "a": 12,
+      "tlStart": 5.4,
+      "tlEnd": 11.969999999999999,
+      "srcStart": 6.3500000000000005,
+      "srcEnd": 12.92,
+      "label": "together. Give me scenario, give me a story, because"
+    },
+    {
+      "i": 2,
+      "v": 14,
+      "a": 15,
+      "tlStart": 11.969999999999999,
+      "tlEnd": 14,
+      "srcStart": 14.149999999999999,
+      "srcEnd": 16.18,
+      "label": "love, I understand that in crisis,"
+    },
+    {
+      "i": 3,
+      "v": 20,
+      "a": 21,
+      "tlStart": 14,
+      "tlEnd": 16.41,
+      "srcStart": 17.09,
+      "srcEnd": 19.5,
+      "label": "in despair, in difficult times,"
+    },
+    {
+      "i": 4,
+      "v": 26,
+      "a": 27,
+      "tlStart": 16.41,
+      "tlEnd": 17.599999999999998,
+      "srcStart": 20.37,
+      "srcEnd": 21.56,
+      "label": "it is the love, it is the savior."
+    },
+    {
+      "i": 5,
+      "v": 32,
+      "a": 33,
+      "tlStart": 17.599999999999998,
+      "tlEnd": 20.069999999999997,
+      "srcStart": 22.59,
+      "srcEnd": 25.06,
+      "label": "I say time where you can understand each other,"
+    },
+    {
+      "i": 6,
+      "v": 38,
+      "a": 39,
+      "tlStart": 20.069999999999997,
+      "tlEnd": 20.849999999999998,
+      "srcStart": 25.89,
+      "srcEnd": 26.67,
+      "label": "I understand this."
+    }
+  ],
+  "log": [
+    "fresh project",
+    "sequence 1080x1920@30 (V1 V2 A1 A2)",
+    "imported base.mp4 (item 6)",
+    "7 clip(s) on V1, audio on A1",
+    "captions on 7 clips",
+    "8 sfx on A2",
+    "effects: 75 line(s) reported issues (kept going)"
+  ]
+}

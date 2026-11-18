@@ -1,0 +1,78 @@
+{
+  "aspect": "9:16",
+  "baseFile": "/api/jobs/edit-db28e093/media/base.mp4",
+  "audio": {
+    "volume": 1,
+    "source": "enhanced",
+    "enhanced": "/api/jobs/edit-db28e093/media/enhanced.wav"
+  },
+  "cuts": {
+    "words": [],
+    "ranges": []
+  },
+  "hook": null,
+  "cta": {
+    "text": "Follow for more",
+    "dur": 3
+  },
+  "zooms": [
+    0
+  ],
+  "broll": [],
+  "motion": [
+    {
+      "type": "burst",
+      "t": 0.25,
+      "dur": 1.1,
+      "color": "#ffd60a",
+      "x": 0.5,
+      "y": 0.32,
+      "text": ""
+    },
+    {
+      "type": "pulse",
+      "t": 6.723,
+      "dur": 0.9,
+      "color": "#22d3ee",
+      "x": 0.5,
+      "y": 0.5,
+      "text": ""
+    },
+    {
+      "type": "sweep",
+      "t": 11.84,
+      "dur": 0.9,
+      "color": "#ffd60a",
+      "y": 0.805,
+      "text": ""
+    }
+  ],
+  "color": {
+    "brightness": 1.05,
+    "contrast": 1.08,
+    "saturation": 1.1
+  },
+  "captions": {
+    "enabled": true,
+    "style": "bold",
+    "font": "Impact",
+    "size": 64,
+    "color": "#ffffff",
+    "outline": true,
+    "maxWords": 4
+  },
+  "music": null,
+  "sfx": {
+    "clips": [
+      {
+        "t": 11.99,
+        "clip": "ding.wav",
+        "vol": 0.4,
+        "idx": 0,
+        "file": "/api/jobs/edit-db28e093/media/sfx%2Fding.wav"
+      }
+    ]
+  },
+  "watermark": null,
+  "outName": "LukeRaw-11s"
+}
